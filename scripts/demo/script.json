@@ -1,0 +1,9 @@
+[
+  { "id": "s1", "scene": "intro+home", "text": "Construire l'emploi du temps d'une école, c'est des semaines de casse-tête. Fedi's Planner le fait en quelques secondes." },
+  { "id": "s2", "scene": "generate", "text": "On génère une école réaliste : une centaine de groupes, autant de professeurs, des amphis, des salles de TD et des labos." },
+  { "id": "s3", "scene": "solve", "text": "Le solveur CP-SAT de Google place chaque séance sans aucun conflit, en limitant les trous, les cours tardifs et les journées déséquilibrées." },
+  { "id": "s4", "scene": "benchmark", "text": "Résultat : un emploi du temps jusqu'à six fois meilleur qu'un algorithme glouton classique." },
+  { "id": "s5", "scene": "replan", "text": "Un professeur tombe malade jeudi ? Le planning est recalculé en déplaçant le moins de cours possible, sans toucher aux séances déjà passées." },
+  { "id": "s6", "scene": "conflict", "text": "Et quand aucune solution n'existe, l'outil explique pourquoi, en isolant le plus petit ensemble de contraintes incompatibles." },
+  { "id": "s7", "scene": "export+outro", "text": "Export en PDF ou directement dans votre agenda. Le code est sur GitHub." }
+]

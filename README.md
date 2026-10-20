@@ -143,6 +143,11 @@ frontend/    Next.js (app/, components/ copiés de LMAgent, lib/)
 scripts/     audits de la règle des 14 jours (pip et npm)
 ```
 
+## Vidéo de démo
+
+Démo narrée de 1 min 30, générée automatiquement (voix Windows, Edge sans fenêtre, ffmpeg), en 16:9 et en 4:5 :
+voir [scripts/demo/README.md](scripts/demo/README.md) pour la régénérer. Les vidéos ne sont pas versionnées.
+
 ## Design
 
 Structure du thème, polices (Public Sans, Instrument Serif), mode sombre, Lenis, `useReducedMotion`, composants
