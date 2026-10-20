@@ -30,6 +30,7 @@ from dataclasses import dataclass
 from ortools.sat.python import cp_model
 
 from planner.model import Assignment, Instance, Solution
+from planner.scoring import disjoint_blocks
 
 
 def threshold_violations(instance: Instance) -> list[str]:
@@ -46,18 +47,9 @@ def threshold_violations(instance: Instance) -> list[str]:
 
 
 def tp_blocks(instance: Instance, slots_by_course: dict[str, list[int]]) -> list[tuple[str, int, int]]:
-    """Consecutive (same day, adjacent position) session pairs of lab courses."""
-    grid = instance.grid
-    blocks = []
-    for c in instance.courses:
-        if not c.is_lab:
-            continue
-        slots = sorted(slots_by_course.get(c.id, []))
-        for a, b in zip(slots, slots[1:]):
-            ra, rb = grid.slots[a], grid.slots[b]
-            if ra.day == rb.day and rb.position == ra.position + 1:
-                blocks.append((c.id, a, b))
-    return blocks
+    """Consecutive session pairs of lab courses (same rule as scoring: grid.consecutive_pairs)."""
+    return [(c.id, a, b) for c in instance.courses if c.is_lab
+            for a, b in disjoint_blocks(instance.grid, slots_by_course.get(c.id, []))]
 
 
 @dataclass

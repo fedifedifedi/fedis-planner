@@ -28,6 +28,7 @@ from ortools.sat.python import cp_model
 
 from planner.model import Assignment, Instance, RoomType, Solution
 from planner.rooms import assign_rooms, threshold_violations
+from planner.scoring import CRITERIA, Weights, chain_courses, score, teacher_courses
 
 DEFAULT_TIME_LIMIT = 60.0
 DEFAULT_WORKERS = 8
@@ -52,6 +53,8 @@ class TimetableModel:
         self.x: dict[tuple[str, int], cp_model.IntVar] = {}
         self.y: dict[tuple[str, int, str], cp_model.IntVar] = {}
         self.constraints: dict[str, list[cp_model.Constraint]] = defaultdict(list)
+        self.terms: dict[str, cp_model.LinearExprT] = {}
+        self.weights: Weights | None = None
         self._build_variables()
         self._add_hard_constraints()
         if rooms == "full":
@@ -152,6 +155,88 @@ class TimetableModel:
                     if len(vars_) > cap:
                         self.add(f"room_capacity:{rtype.value}:{k}", m.add(sum(vars_) <= cap))
 
+    # ------------------------------------------------------------------ objective
+
+    def _occ(self, course_ids: list[str], t: int) -> list[cp_model.IntVar]:
+        return [self.x[cid, t] for cid in course_ids if (cid, t) in self.x]
+
+    def _gap_vars(self, course_ids: list[str]) -> list[cp_model.IntVar]:
+        """Gap indicators of one entity (chain or teacher). occ(t) = sum of x, <= 1 by hard constraints.
+        pre/post are only bounded from below: minimisation makes them exact ORs."""
+        m, gaps = self.model, []
+        for day_slots in self.instance.grid.slots_by_day:
+            occ = [sum(v) if (v := self._occ(course_ids, t)) else 0 for t in day_slots]
+            possible = [i for i, t in enumerate(day_slots) if self._occ(course_ids, t)]
+            if len(possible) < 2:
+                continue
+            k = len(day_slots)
+            pre = [m.new_bool_var("") for _ in range(k)]
+            post = [m.new_bool_var("") for _ in range(k)]
+            for i in range(k):
+                if i in possible:
+                    m.add(pre[i] >= occ[i])
+                    m.add(post[i] >= occ[i])
+                if i > 0:
+                    m.add(pre[i] >= pre[i - 1])
+                if i < k - 1:
+                    m.add(post[i] >= post[i + 1])
+            for i in range(1, k - 1):
+                if possible[0] < i < possible[-1]:
+                    g = m.new_bool_var("")
+                    m.add(g >= pre[i - 1] + post[i + 1] - occ[i] - 1)
+                    gaps.append(g)
+        return gaps
+
+    def add_objective(self, weights: Weights) -> None:
+        """Weighted soft constraints, same definitions as scoring.score()."""
+        inst, m, grid = self.instance, self.model, self.instance.grid
+        terms: dict[str, list] = {k: [] for k in CRITERIA}
+
+        terms["late"] = [self.x[c.id, t] for c in inst.courses for t in grid.late_slots if (c.id, t) in self.x]
+
+        for c in inst.courses:
+            if not (c.is_lab and c.sessions_per_week >= 2):
+                continue
+            wanted = c.sessions_per_week // 2
+            pairs = {(a, b): m.new_bool_var("") for a, b in sorted(grid.consecutive_pairs)
+                     if (c.id, a) in self.x and (c.id, b) in self.x}
+            for t in self.course_slots(c.id):
+                touching = [v for (a, b), v in pairs.items() if t in (a, b)]
+                if touching:
+                    m.add(sum(touching) <= self.x[c.id, t])  # each session in at most one block
+            if pairs:
+                m.add(sum(pairs.values()) <= wanted)
+            terms["tp_split"].append(wanted - sum(pairs.values()))
+
+        if weights.teacher_gaps:
+            for cids in teacher_courses(inst).values():
+                terms["teacher_gaps"] += self._gap_vars(cids)
+
+        for cids in chain_courses(inst).values():
+            if weights.student_gaps:
+                terms["student_gaps"] += self._gap_vars(cids)
+            loads = [sum(v for t in day for v in self._occ(cids, t)) for day in grid.slots_by_day]
+            if weights.single_session_day:
+                for day in grid.slots_by_day:
+                    occ = {t: sum(v) for t in day if (v := self._occ(cids, t))}
+                    if not occ:
+                        continue
+                    one = m.new_bool_var("")
+                    for t, o in occ.items():  # one >= 1 iff exactly one occupied slot that day
+                        m.add(one >= o - sum(other for s, other in occ.items() if s != t))
+                    terms["single_session_day"].append(one)
+            if weights.imbalance and len(grid.full_days) >= 2:
+                hi = m.new_int_var(0, grid.num_slots, "")
+                lo = m.new_int_var(0, grid.num_slots, "")
+                for d in grid.full_days:
+                    m.add(hi >= loads[d])
+                    m.add(lo <= loads[d])
+                terms["imbalance"].append(hi - lo)
+
+        self.terms = {k: sum(v) for k, v in terms.items()}
+        self.weights = weights
+        m.minimize(sum(getattr(weights, k) * expr for k, expr in self.terms.items()))
+
     # ------------------------------------------------------------------ solve
 
     def stats(self) -> dict[str, int | str]:
@@ -212,9 +297,12 @@ def run_solver(tm: TimetableModel, time_limit: float = DEFAULT_TIME_LIMIT,
                           "same_room_blocks": rooms.same_room_blocks}
 
     objective = bound = gap = None
+    score_info = None
     if solution is not None and tm.model.has_objective():
         objective, bound = solver.objective_value, solver.best_objective_bound
         gap = abs(objective - bound) / max(1.0, abs(objective))
+        # true score of the returned timetable (auxiliary vars may be loose if not OPTIMAL: score <= objective)
+        score_info = score(tm.instance, solution, tm.weights).as_dict()
     stats = {
         "status": name,
         **tm.stats(),
@@ -227,12 +315,16 @@ def run_solver(tm: TimetableModel, time_limit: float = DEFAULT_TIME_LIMIT,
         "objective": objective,
         "best_bound": bound,
         "gap": gap,
+        "score": score_info,
     }
     return SolveResult(status=name, solution=solution, stats=stats)
 
 
 def solve(instance: Instance, time_limit: float = DEFAULT_TIME_LIMIT, workers: int = DEFAULT_WORKERS,
-          random_seed: int = 0, rooms: RoomsMode = "threshold") -> SolveResult:
-    """Find a timetable satisfying every hard constraint (no objective yet)."""
-    return run_solver(TimetableModel(instance, rooms=rooms), time_limit=time_limit, workers=workers,
-                      random_seed=random_seed)
+          random_seed: int = 0, rooms: RoomsMode = "threshold", weights: Weights | None = None,
+          optimize: bool = True) -> SolveResult:
+    """Build and solve the timetable. optimize=False: hard constraints only (feasibility)."""
+    tm = TimetableModel(instance, rooms=rooms)
+    if optimize:
+        tm.add_objective(weights or Weights())
+    return run_solver(tm, time_limit=time_limit, workers=workers, random_seed=random_seed)

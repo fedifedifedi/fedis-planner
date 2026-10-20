@@ -97,6 +97,8 @@ class GridConfig(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     days: list[Day] = Field(default_factory=default_days, min_length=1)
+    max_break_minutes: int = Field(default=15, ge=0, description="two adjacent slots are consecutive "
+                                   "if the break between them is at most this long (lunch breaks a block)")
 
     @cached_property
     def slots(self) -> list[SlotRef]:
@@ -124,6 +126,23 @@ class GridConfig(BaseModel):
     @property
     def late_slots(self) -> list[int]:
         return [ref.index for ref in self.slots if ref.slot.late]
+
+    @cached_property
+    def consecutive_pairs(self) -> frozenset[tuple[int, int]]:
+        """(t, t+1) pairs on the same day whose break is <= max_break_minutes."""
+        pairs = set()
+        for day_slots in self.slots_by_day:
+            for a, b in zip(day_slots, day_slots[1:]):
+                gap = _minutes(self.slots[b].slot.start) - _minutes(self.slots[a].slot.end)
+                if gap <= self.max_break_minutes:
+                    pairs.add((a, b))
+        return frozenset(pairs)
+
+    @cached_property
+    def full_days(self) -> list[int]:
+        """Days having the maximum number of slots (Mon-Fri by default): used for day balance."""
+        longest = max(len(d.slots) for d in self.days)
+        return [i for i, d in enumerate(self.days) if len(d.slots) == longest]
 
     def describe(self, t: int) -> str:
         ref = self.slots[t]

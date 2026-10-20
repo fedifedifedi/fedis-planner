@@ -1,5 +1,8 @@
+from functools import partial
+
 import pytest
 
+from planner import solver
 from planner.generator import INFEASIBLE_KINDS, generate, make_infeasible
 from planner.model import (
     Assignment,
@@ -14,8 +17,11 @@ from planner.model import (
     Teacher,
     TimeSlot,
 )
-from planner.solver import TimetableModel, solve
+from planner.solver import TimetableModel
 from planner.validate import check_solution
+
+# hard constraints only: these tests check feasibility, not the objective
+solve = partial(solver.solve, optimize=False)
 
 
 def grid(days: int = 1, slots: int = 2) -> GridConfig:

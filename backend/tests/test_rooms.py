@@ -1,16 +1,26 @@
 """Threshold decomposition: agreement with rooms='full', Hall cases, assumption guard, phase 2."""
 
+from functools import partial
+
 import pytest
 
+from planner import solver
 from planner.generator import INFEASIBLE_KINDS, generate, make_infeasible
 from planner.model import Course, Day, GridConfig, Group, Instance, Room, RoomType, Teacher, TimeSlot
 from planner.rooms import assign_rooms, threshold_violations
-from planner.solver import TimetableModel, solve
+from planner.solver import TimetableModel
 from planner.validate import check_solution
+
+# hard constraints only: these tests check feasibility, not the objective
+solve = partial(solver.solve, optimize=False)
 
 
 def one_slot_grid(slots: int = 1) -> GridConfig:
-    times = [TimeSlot(start=f"{8 + 2 * i:02d}:00", end=f"{9 + 2 * i:02d}:30") for i in range(slots)]
+    """90-min slots separated by 10-min breaks (consecutive under the default 15-min rule)."""
+    times = []
+    for i in range(slots):
+        s = 8 * 60 + 100 * i
+        times.append(TimeSlot(start=f"{s // 60:02d}:{s % 60:02d}", end=f"{(s + 90) // 60:02d}:{(s + 90) % 60:02d}"))
     return GridConfig(days=[Day(name="D", slots=times)])
 
 
