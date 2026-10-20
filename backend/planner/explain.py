@@ -16,7 +16,7 @@ import time
 from ortools.sat.python import cp_model
 from pydantic import BaseModel, Field
 
-from planner.model import Instance, RoomType
+from planner.model import Instance, RoomType, Solution
 from planner.solver import TimetableModel
 
 ASSUMPTION_NOTE = "en considérant que tous les cours doivent avoir leurs heures (volume horaire toujours imposé)"
@@ -104,6 +104,9 @@ def describe(instance: Instance, family: str) -> Conflict:
     if kind == "room":
         r = instance.room_by_id[rest]
         return Conflict(family=kind, entity=rest, message=f"La salle {r.name} n'accueille qu'un cours à la fois")
+    if kind == "past":
+        return Conflict(family=kind, entity="",
+                        message="Les séances déjà passées sont figées : rien ne peut être placé avant l'annonce")
     return Conflict(family=kind, entity=rest, message=family)
 
 
@@ -128,10 +131,14 @@ def _check(tm: TimetableModel, families: list[str], time_limit: float) -> tuple[
     return name, [by_index[i] for i in solver.sufficient_assumptions_for_infeasibility() if i in by_index]
 
 
-def explain(instance: Instance, check_time_limit: float = 20.0) -> Explanation:
+def explain(instance: Instance, check_time_limit: float = 20.0,
+            past: tuple[Solution, int] | None = None) -> Explanation:
+    """past = (previous timetable, announced_at): sessions before that slot are frozen (replanning)."""
     start = time.perf_counter()
     pre = precheck(instance)
     tm = TimetableModel(instance, explain=True)
+    if past is not None:
+        tm.freeze_before(*past)
     families = sorted(tm.literals)
 
     status, core = _check(tm, families, check_time_limit)

@@ -52,6 +52,8 @@ Backend complet (étapes 0 → 8) **avant** l'interface (9 → 11).
 - **Pistes de résolution des conflits** : pour chaque conflit expliqué, proposer une action
   (ex. « libérer le mardi 08:30 pour tel prof », « ajouter un labo de ≥ 16 places »).
 - Départ glouton (hint) et limites de temps par taille : à décider après le benchmark (étape 7).
+- **Replanification impossible → report à la semaine suivante** : rendre le volume horaire souple
+  (séances non placées autorisées, avec une forte pénalité par séance reportée) et lister les reports.
 
 ## Domaine
 
@@ -61,6 +63,24 @@ Backend complet (étapes 0 → 8) **avant** l'interface (9 → 11).
 - **Contraintes dures** : pas de double réservation (prof, groupe, salle), capacité et type de salle, volume horaire par cours, disponibilités des profs.
 - **Préférences** (poids réglables) : minimiser les trous, éviter les créneaux tardifs, TP consécutifs, journées équilibrées.
 - Une **unique fonction de score** (`planner/scoring.py`) pour comparer CP-SAT et glouton.
+
+## Interface (étape 9) : décisions
+
+- **Réutiliser le design de LMAgent** (`C:\Users\SBS\lmagent`) en **copiant** dans `frontend/` (pas de recréation) :
+  couleurs + mode sombre, polices, Lenis, `useReducedMotion`, composants d'apparition, style de l'en-tête.
+- **Animations** : GSAP (dont le plugin **Flip**), Lenis, composants **React Bits** en version GSAP ou CSS.
+  **21st.dev** : inspiration seulement, ou composants **sans motion** dont la licence permet la réutilisation (la vérifier et la citer).
+- **Effets prévus** :
+  - replanification : séances déplacées qui glissent de l'ancien au nouveau créneau (GSAP Flip) + surlignage ;
+  - résolution : apparition des séances en cascade ;
+  - conflits : survoler une contrainte du panneau surligne les cours et créneaux concernés dans la grille ;
+  - accueil : animations plus marquées.
+- **Règles (comme LMAgent)** : pas de WebGL, `prefers-reduced-motion` respecté, **contenu visible même si l'animation ne se lance pas**.
+
+## Rythme de travail (à partir de l'étape 6)
+
+Étapes 6, 7 et 8 enchaînées sans validation intermédiaire : un commit + un court rapport à la fin de chacune ;
+s'arrêter seulement en cas de vrai choix ou de problème. Un seul benchmark complet (étape 7).
 
 ## Salles : décomposition par seuils de capacité (`rooms="threshold"`, défaut)
 

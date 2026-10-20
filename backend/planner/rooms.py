@@ -61,8 +61,16 @@ class RoomAssignmentResult:
 
 
 def assign_rooms(instance: Instance, slots_by_course: dict[str, list[int]],
-                 time_limit: float = 10.0, workers: int = 8, random_seed: int = 0) -> RoomAssignmentResult:
-    """Phase 2: rooms for fixed slots, maximising consecutive TP blocks kept in the same room."""
+                 time_limit: float = 10.0, workers: int = 8, random_seed: int = 0,
+                 previous: dict[tuple[str, int], str] | None = None,
+                 frozen: set[tuple[str, int]] | None = None) -> RoomAssignmentResult:
+    """Phase 2: rooms for fixed slots.
+
+    Objective, lexicographic: (1) keep the `previous` room of each session that kept its slot
+    (replanning), (2) keep consecutive TP blocks in the same room. Sessions in `frozen`
+    (already held) must keep their previous room.
+    """
+    previous, frozen = previous or {}, frozen or set()
     start = time.perf_counter()
     m = cp_model.CpModel()
     z: dict[tuple[str, int, str], cp_model.IntVar] = {}
@@ -89,8 +97,17 @@ def assign_rooms(instance: Instance, slots_by_course: dict[str, list[int]],
             m.add_implication(s, z[cid, a, r])
             m.add_implication(s, z[cid, b, r])
             same.append(s)
-    if same:
-        m.maximize(sum(same))
+    keep = []
+    for (cid, t), room in previous.items():
+        if (cid, t, room) not in z:
+            continue  # session moved, or room no longer compatible
+        if (cid, t) in frozen:
+            m.add(z[cid, t, room] == 1)
+        else:
+            keep.append(z[cid, t, room])
+    if same or keep:
+        # each kept room outweighs every TP block bonus together
+        m.maximize((len(same) + 1) * sum(keep) + sum(same))
 
     solver = cp_model.CpSolver()
     solver.parameters.max_time_in_seconds = time_limit

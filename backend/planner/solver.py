@@ -38,7 +38,7 @@ RoomsMode = Literal["threshold", "full"]
 
 # Families that can be switched off by an assumption literal in explain mode. "hours" (every course gets
 # its sessions) and "room_link" stay always enforced: they are the background of every explanation.
-EXPLAINABLE = frozenset({"availability", "teacher", "students", "room_capacity", "max_per_day", "room"})
+EXPLAINABLE = frozenset({"availability", "teacher", "students", "room_capacity", "max_per_day", "room", "past"})
 
 
 class TimetableModel:
@@ -183,6 +183,16 @@ class TimetableModel:
                 if self.explain and demand > cap * inst.grid.num_slots:
                     self.add(family, m.add_bool_or([m.new_constant(0)]))
 
+    def freeze_before(self, solution: Solution, announced_at: int) -> None:
+        """Slots before `announced_at` are in the past: keep exactly the sessions held there, nothing else."""
+        held = {(a.course_id, a.slot) for a in solution.assignments if a.slot < announced_at}
+        missing = [k for k in held if k not in self.x]
+        if missing:
+            raise ValueError(f"past sessions on unavailable slots (invalid previous timetable): {missing}")
+        for (cid, t), x in self.x.items():
+            if t < announced_at:
+                self.add("past", self.model.add(x == int((cid, t) in held)))
+
     # ------------------------------------------------------------------ objective
 
     def _occ(self, course_ids: list[str], t: int) -> list[cp_model.IntVar]:
@@ -305,7 +315,9 @@ class SolveResult:
 
 
 def run_solver(tm: TimetableModel, time_limit: float = DEFAULT_TIME_LIMIT,
-               workers: int = DEFAULT_WORKERS, random_seed: int = 0) -> SolveResult:
+               workers: int = DEFAULT_WORKERS, random_seed: int = 0,
+               previous_rooms: dict[tuple[str, int], str] | None = None,
+               frozen_rooms: set[tuple[str, int]] | None = None) -> SolveResult:
     solver = cp_model.CpSolver()
     solver.parameters.max_time_in_seconds = time_limit
     solver.parameters.num_workers = workers
@@ -321,7 +333,8 @@ def run_solver(tm: TimetableModel, time_limit: float = DEFAULT_TIME_LIMIT,
         if tm.rooms_mode == "full":
             solution = tm.extract_full(solver)
         else:
-            rooms = assign_rooms(tm.instance, tm.chosen_slots(solver), workers=workers, random_seed=random_seed)
+            rooms = assign_rooms(tm.instance, tm.chosen_slots(solver), workers=workers, random_seed=random_seed,
+                                 previous=previous_rooms, frozen=frozen_rooms)
             solution = rooms.solution
             room_stats = {"room_time": round(rooms.time, 3), "tp_blocks": rooms.tp_blocks,
                           "same_room_blocks": rooms.same_room_blocks}
