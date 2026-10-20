@@ -36,8 +36,15 @@ DEFAULT_WORKERS = 8
 RoomsMode = Literal["threshold", "full"]
 
 
+# Families that can be switched off by an assumption literal in explain mode. "hours" (every course gets
+# its sessions) and "room_link" stay always enforced: they are the background of every explanation.
+EXPLAINABLE = frozenset({"availability", "teacher", "students", "room_capacity", "max_per_day", "room"})
+
+
 class TimetableModel:
-    def __init__(self, instance: Instance, rooms: RoomsMode = "threshold") -> None:
+    def __init__(self, instance: Instance, rooms: RoomsMode = "threshold", explain: bool = False) -> None:
+        """explain=True: teacher unavailability becomes constraints (x == 0) instead of missing variables,
+        and every EXPLAINABLE family is enforced by one assumption literal (see planner/explain.py)."""
         start = time.perf_counter()
         if rooms not in ("threshold", "full"):
             raise ValueError(f"rooms must be 'threshold' or 'full', got {rooms!r}")
@@ -49,6 +56,8 @@ class TimetableModel:
                 rooms = "full"
         self.instance = instance
         self.rooms_mode: RoomsMode = rooms
+        self.explain = explain
+        self.literals: dict[str, cp_model.IntVar] = {}
         self.model = cp_model.CpModel()
         self.x: dict[tuple[str, int], cp_model.IntVar] = {}
         self.y: dict[tuple[str, int, str], cp_model.IntVar] = {}
@@ -70,12 +79,23 @@ class TimetableModel:
         for c in inst.courses:
             blocked = set(inst.teacher_by_id[c.teacher_id].unavailable)
             for t in range(inst.grid.num_slots):
-                if t not in blocked:
+                if t not in blocked or self.explain:
                     self.x[c.id, t] = self.model.new_bool_var(f"x[{c.id},{t}]")
+                if t in blocked and self.explain:
+                    self.add(f"availability:{c.teacher_id}", self.model.add(self.x[c.id, t] == 0))
 
     def add(self, family: str, constraint: cp_model.Constraint) -> cp_model.Constraint:
         self.constraints[family].append(constraint)
+        if self.explain and family.split(":")[0] in EXPLAINABLE:
+            if family not in self.literals:
+                self.literals[family] = self.model.new_bool_var(f"assume[{family}]")
+            constraint.only_enforce_if(self.literals[family])
         return constraint
+
+    def _at_most_one(self, family: str, vars_: list[cp_model.IntVar]) -> None:
+        # enforcement literals are only guaranteed on linear constraints: use sum <= 1 in explain mode
+        ct = self.model.add(sum(vars_) <= 1) if self.explain else self.model.add_at_most_one(vars_)
+        self.add(family, ct)
 
     def course_slots(self, course_id: str) -> list[int]:
         return [t for t in range(self.instance.grid.num_slots) if (course_id, t) in self.x]
@@ -99,7 +119,7 @@ class TimetableModel:
             for t in range(n):
                 vars_ = [self.x[cid, t] for cid in cids if (cid, t) in self.x]
                 if len(vars_) > 1:
-                    self.add(f"teacher:{tid}", m.add_at_most_one(vars_))
+                    self._at_most_one(f"teacher:{tid}", vars_)
 
         for chain in inst.student_chains:
             leaf = next(g for g in sorted(chain) if not inst.children[g])
@@ -107,7 +127,7 @@ class TimetableModel:
             for t in range(n):
                 vars_ = [self.x[cid, t] for cid in cids if (cid, t) in self.x]
                 if len(vars_) > 1:
-                    self.add(f"students:{leaf}", m.add_at_most_one(vars_))
+                    self._at_most_one(f"students:{leaf}", vars_)
 
     def _add_room_variables(self) -> None:
         """rooms='full': explicit room variables y[c,t,r]."""
@@ -130,7 +150,7 @@ class TimetableModel:
                 self.add(f"room_link:{c.id}", m.add(sum(vars_) == x))
         for (r, _t), vars_ in by_room_slot.items():
             if len(vars_) > 1:
-                self.add(f"room:{r}", m.add_at_most_one(vars_))
+                self._at_most_one(f"room:{r}", vars_)
 
     def _add_room_thresholds(self) -> None:
         """rooms='threshold': per slot, type and capacity threshold k,
@@ -150,10 +170,18 @@ class TimetableModel:
                     thresholds.append((k, cap))
             for k, cap in thresholds:
                 cids = [c.id for c in courses if sizes[c.id] >= k]
+                family = f"room_capacity:{rtype.value}:{k}"
                 for t in range(inst.grid.num_slots):
                     vars_ = [self.x[cid, t] for cid in cids if (cid, t) in self.x]
                     if len(vars_) > cap:
-                        self.add(f"room_capacity:{rtype.value}:{k}", m.add(sum(vars_) <= cap))
+                        self.add(family, m.add(sum(vars_) <= cap))
+                # explain mode only — implied weekly count: hours are always enforced, so the weekly number
+                # of sessions is the constant D. If D > cap x slots the family contradicts itself; stating it
+                # as an always-false constraint lets presolve reject the literal at once (single-worker
+                # search needed for cores did not prove it: medium instance UNKNOWN after 20 s).
+                demand = sum(inst.course_by_id[cid].sessions_per_week for cid in cids)
+                if self.explain and demand > cap * inst.grid.num_slots:
+                    self.add(family, m.add_bool_or([m.new_constant(0)]))
 
     # ------------------------------------------------------------------ objective
 
@@ -231,6 +259,8 @@ class TimetableModel:
                 for d in grid.full_days:
                     m.add(hi >= loads[d])
                     m.add(lo <= loads[d])
+                # No ceil(L/n) - floor(L/n) cut here: tried and measured useless, the full-day load L
+                # moves with Saturday sessions so some placement nearly always makes L divisible by n.
                 terms["imbalance"].append(hi - lo)
 
         self.terms = {k: sum(v) for k, v in terms.items()}

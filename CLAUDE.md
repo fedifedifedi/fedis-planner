@@ -47,6 +47,12 @@ Backend complet (étapes 0 → 8) **avant** l'interface (9 → 11).
 | 10 | Exports PDF / .ics |
 | 11 | README, finitions |
 
+### Idées pour plus tard (hors périmètre actuel)
+
+- **Pistes de résolution des conflits** : pour chaque conflit expliqué, proposer une action
+  (ex. « libérer le mardi 08:30 pour tel prof », « ajouter un labo de ≥ 16 places »).
+- Départ glouton (hint) et limites de temps par taille : à décider après le benchmark (étape 7).
+
 ## Domaine
 
 - **Grille configurable** (jours + horaires des créneaux dans la config). Défaut : lundi → samedi matin, séances de 1h30 :
