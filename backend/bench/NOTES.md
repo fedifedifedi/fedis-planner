@@ -46,7 +46,8 @@ Instances serrées (occupation des salles 100 %, graine 1) :
 | grande | 9 séances non placées | emploi du temps complet (score 784) |
 
 Lecture :
-- Le glouton est 100 à 1000 fois plus rapide mais 3 à 6 fois moins bon, et il échoue (séances non placées)
+- Le glouton est 100 à 1000 fois plus rapide mais moins bon : score ×4 à ×6 sur la petite école, ×2,7 à ×3,1 sur la
+  moyenne, ×1,5 à ×1,7 sur la grande (CP-SAT n'a que 60 s pour 600 séances). Il échoue aussi (séances non placées)
   dès que les salles sont pleines, même quand une solution existe.
 - **Départ glouton** : première solution plus tôt partout (moyenne 2–4 s au lieu de 4,5–5 s ; grande 5–15 s
   au lieu de 12–16 s). Score final sur les 8 instances moyennes/grandes : meilleur sur 5, égal sur 1, un peu
