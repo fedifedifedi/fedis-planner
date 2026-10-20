@@ -1,0 +1,10 @@
+[project]
+name = "fedis-planner"
+version = "0.1.0"
+description = "Constraint-based timetable generator (CP-SAT)"
+requires-python = ">=3.13"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

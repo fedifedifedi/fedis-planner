@@ -1,0 +1,6 @@
+# Pinned direct dependencies — every version published >= 14 days before pinning.
+# Verify with: python scripts/check_package_age.py
+ortools==9.15.6755
+fastapi==0.142.2
+uvicorn==0.54.0
+pydantic==2.13.5
