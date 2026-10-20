@@ -24,3 +24,6 @@ Thumbs.db
 *.tsbuildinfo
 next-env.d.ts
 .env.local
+
+# Browser test outputs
+frontend/tests/output/

@@ -69,7 +69,10 @@ Backend complet (étapes 0 → 8) **avant** l'interface (9 → 11).
 ## Interface (étape 9) : décisions
 
 - **Réutiliser le design de LMAgent** (`C:\Users\SBS\lmagent`) en **copiant** dans `frontend/` (pas de recréation) :
-  couleurs + mode sombre, polices, Lenis, `useReducedMotion`, composants d'apparition, style de l'en-tête.
+  structure du thème + mode sombre, polices, Lenis, `useReducedMotion`, composants d'apparition, style de l'en-tête.
+  **Couleurs différentes de LMAgent** : palette « Sauge & encre » (variables de `frontend/app/globals.css`).
+- Pas de React Bits ni de 21st.dev supplémentaires.
+- Test navigateur : `cd frontend; npm run test:e2e` (API + interface lancées).
 - **Animations** : GSAP (dont le plugin **Flip**), Lenis, composants **React Bits** en version GSAP ou CSS.
   **21st.dev** : inspiration seulement, ou composants **sans motion** dont la licence permet la réutilisation (la vérifier et la citer).
 - **Effets prévus** :

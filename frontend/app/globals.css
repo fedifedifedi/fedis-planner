@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "lenis/dist/lenis.css";
 
-/* Copié de LMAgent (C:\Users\SBS\lmagent\app\globals.css) : thème « Encre & papier », polices, mode sombre, motion.
+/* Copié de LMAgent (C:\Users\SBS\lmagent\app\globals.css) : structure du thème, polices, mode sombre, motion ; couleurs « Sauge & encre » propres.
    Retiré : imports shadcn / tw-animate-css et règles propres aux lettres. Ajouté en fin de fichier : grille du planificateur. */
 
 /* Thème : classe .dark posée sur <html> par le script de components/theme (système par défaut, sans flash). */
@@ -43,60 +43,60 @@
 }
 
 /*
- * Direction « Encre & papier » (référence dans CLAUDE.md). La feuille de la lettre reste claire dans les deux thèmes :
- * c'est ce que le recruteur reçoit en PDF.
+ * Palette « Sauge & encre », propre à Fedi's Planner (structure des variables reprise de LMAgent, couleurs différentes) :
+ * encre vert profond, accent sarcelle, surligneur ambré, sceau corail ; thème sombre vert ardoise.
  */
 :root {
-  --background: #f5f6f9; /* fond */
-  --foreground: #1c2a4a; /* encre */
+  --background: #f3f6f2; /* fond sauge très clair */
+  --foreground: #16332e; /* encre vert profond */
   --card: #ffffff; /* surface */
-  --card-foreground: #1c2a4a;
+  --card-foreground: #16332e;
   --popover: #ffffff;
-  --popover-foreground: #1c2a4a;
-  --primary: #1c2a4a; /* accent : bouton principal */
+  --popover-foreground: #16332e;
+  --primary: #0e5f57; /* sarcelle : bouton principal */
   --primary-foreground: #ffffff;
-  --secondary: #eef1f7;
-  --secondary-foreground: #1c2a4a;
-  --muted: #eef1f7;
-  --muted-foreground: #5f6880; /* mine */
-  --accent: #eef1f7;
-  --accent-foreground: #1c2a4a;
-  --destructive: #b3261e; /* cachet */
-  --warning: #b3261e;
-  --border: #d9dde6; /* filet */
-  --input: #d9dde6;
-  --ring: #2a5bd7;
+  --secondary: #e6eee9;
+  --secondary-foreground: #16332e;
+  --muted: #e6eee9;
+  --muted-foreground: #586b65;
+  --accent: #e6eee9;
+  --accent-foreground: #16332e;
+  --destructive: #b4232c;
+  --warning: #b4232c;
+  --border: #d3ddd8; /* filet */
+  --input: #d3ddd8;
+  --ring: #12877a;
   --sheet: #ffffff;
-  --sheet-foreground: #1c2a4a;
-  --mark: #ffd9b5; /* surligneur */
-  --seal: #b3261e; /* sceau du logo */
-  --radius: 0.375rem;
+  --sheet-foreground: #16332e;
+  --mark: #ffd27a; /* surligneur ambré */
+  --seal: #d1495b; /* sceau corail */
+  --radius: 0.5rem;
 }
 
 .dark {
-  --background: #10162a;
-  --foreground: #e7eaf3;
-  --card: #172036;
-  --card-foreground: #e7eaf3;
-  --popover: #172036;
-  --popover-foreground: #e7eaf3;
-  --primary: #c8d3f5;
-  --primary-foreground: #10162a;
-  --secondary: #1f2942;
-  --secondary-foreground: #e7eaf3;
-  --muted: #1f2942;
-  --muted-foreground: #9ba4bd;
-  --accent: #1f2942;
-  --accent-foreground: #e7eaf3;
-  --destructive: #ef6b62;
-  --warning: #ef6b62;
-  --border: #2a3452;
-  --input: #2a3452;
-  --ring: #9db6ff;
-  --sheet: #eceef3;
-  --sheet-foreground: #1c2a4a;
-  --mark: #f3c99f;
-  --seal: #ef6b62;
+  --background: #0d1917;
+  --foreground: #e3eee9;
+  --card: #142421;
+  --card-foreground: #e3eee9;
+  --popover: #142421;
+  --popover-foreground: #e3eee9;
+  --primary: #8ad8c8;
+  --primary-foreground: #0d1917;
+  --secondary: #1c302c;
+  --secondary-foreground: #e3eee9;
+  --muted: #1c302c;
+  --muted-foreground: #93a9a2;
+  --accent: #1c302c;
+  --accent-foreground: #e3eee9;
+  --destructive: #f07171;
+  --warning: #f07171;
+  --border: #264039;
+  --input: #264039;
+  --ring: #5cc7b5;
+  --sheet: #e9efec;
+  --sheet-foreground: #16332e;
+  --mark: #e8b85a;
+  --seal: #f07a8a;
   color-scheme: dark;
 }
 
@@ -109,7 +109,7 @@
   html,
   body {
     background: #ffffff !important;
-    color: #1c2a4a !important;
+    color: #16332e !important;
   }
   .no-print {
     display: none !important;
@@ -227,7 +227,7 @@
   --session-edge: oklch(0.55 0.13 var(--hue));
   background: var(--session-bg);
   border-left: 3px solid var(--session-edge);
-  color: #1c2a4a;
+  color: #16332e;
 }
 .dark .session {
   --session-bg: oklch(0.32 0.06 var(--hue));

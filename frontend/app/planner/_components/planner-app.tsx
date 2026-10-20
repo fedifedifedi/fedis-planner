@@ -565,7 +565,7 @@ function ChangesList({ replan }: { replan: ReplanResult }) {
           <ul className="flex flex-col gap-1 text-sm">
             {replan.changes.map((c) => (
               <li key={`${c.course_id}-${c.after_slot}-${c.kind}`}>
-                <strong>{c.course_id}</strong> : {c.before} → <span className="rounded bg-mark/60 px-1 text-[#1c2a4a]">{c.after}</span>
+                <strong>{c.course_id}</strong> : {c.before} → <span className="rounded bg-mark/60 px-1 text-[#16332e]">{c.after}</span>
               </li>
             ))}
           </ul>

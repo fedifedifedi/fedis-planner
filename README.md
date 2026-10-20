@@ -36,6 +36,17 @@ cd ..
 .\dev.ps1
 ```
 
+### Lancer sous Windows
+
+`.\dev.ps1` ouvre deux fenêtres PowerShell (API sur le port 8000, interface sur le port 3000) ; `.\dev.ps1 -Prod` lance
+l'interface compilée. Si l'exécution des scripts est bloquée (« l'exécution de scripts est désactivée sur ce système »),
+lancer le script sans changer la stratégie de la machine :
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\dev.ps1
+powershell -ExecutionPolicy Bypass -File .\dev.ps1 -Prod
+```
+
 API documentée sur http://127.0.0.1:8000/docs. Seule limite : le temps de résolution, plafonné par `FEDIS_MAX_TIME_LIMIT`
 (120 s par défaut). Pas de base de données : tout passe en JSON (instances d'exemple dans `backend/instances/`).
 
@@ -47,6 +58,17 @@ cd backend
 .venv\Scripts\python.exe -m bench.model_size                         # taille du modèle, seuils vs complet
 .venv\Scripts\python.exe -m bench.explain_replan                     # temps d'explication et de replanification
 ```
+
+**Test de l'interface dans le navigateur** (Edge ou Chrome sans fenêtre, piloté par le protocole DevTools, sans
+dépendance) : accueil, chargement, résolution et cascade, exports `.ics` et PDF, replanification (glissement Flip,
+surlignage), conflit minimal et survol, thème sombre. L'API et l'interface doivent tourner (`.\dev.ps1`) :
+
+```powershell
+cd frontend
+npm run test:e2e                     # ou : node tests/e2e.mjs --url http://localhost:3000 --browser "C:\...\chrome.exe"
+```
+
+Les captures et le PDF imprimé sont écrits dans `frontend/tests/output/` ; code de sortie 1 si une vérification échoue.
 
 ## Modélisation
 
@@ -120,6 +142,16 @@ backend/
 frontend/    Next.js (app/, components/ copiés de LMAgent, lib/)
 scripts/     audits de la règle des 14 jours (pip et npm)
 ```
+
+## Design
+
+Structure du thème, polices (Public Sans, Instrument Serif), mode sombre, Lenis, `useReducedMotion`, composants
+d'apparition et en-tête repris du projet LMAgent ; palette propre à Fedi's Planner, **« Sauge & encre »** (encre vert
+profond, accent sarcelle, surligneur ambré, sceau corail ; thème sombre vert ardoise).
+
+## Licence
+
+[MIT](LICENSE) © 2026 Fedi Limem.
 
 ## Pistes
 

@@ -74,7 +74,7 @@ function WeekIllustration() {
     "4-0": { hue: 90, label: "Web" }, "4-2": { hue: 330, label: "Anglais" }, "5-0": { hue: 30, label: "Maths" },
   };
   return (
-    <div aria-hidden="true" className="mx-auto hidden w-full max-w-md rounded-xl border bg-card p-4 shadow-[0_18px_40px_rgb(16_22_42/0.12)] sm:block">
+    <div aria-hidden="true" className="mx-auto hidden w-full max-w-md rounded-xl border bg-card p-4 shadow-[0_18px_40px_rgb(13_40_36/0.14)] sm:block">
       <div className="grid grid-cols-6 gap-1.5 text-center text-[11px] font-semibold text-muted-foreground">
         {days.map((d) => (
           <span key={d}>{d}</span>
