@@ -56,6 +56,21 @@ Backend complet (étapes 0 → 8) **avant** l'interface (9 → 11).
 - **Préférences** (poids réglables) : minimiser les trous, éviter les créneaux tardifs, TP consécutifs, journées équilibrées.
 - Une **unique fonction de score** (`planner/scoring.py`) pour comparer CP-SAT et glouton.
 
+## Salles : décomposition par seuils de capacité (`rooms="threshold"`, défaut)
+
+Le modèle principal ne décide que des créneaux. Pour chaque créneau, type de salle et seuil k :
+`#séances avec ≥ k étudiants ≤ #salles de capacité ≥ k`. Les salles sont attribuées ensuite
+(`planner/rooms.py::assign_rooms`, petit CP-SAT qui maximise les blocs de TP consécutifs gardés dans la même salle).
+
+**Exact uniquement sous deux hypothèses** (ensembles de salles compatibles emboîtés → condition de Hall réduite aux seuils) :
+- **H1** : un cours n'utilise que des salles de **son type exact** ;
+- **H2** : **aucune salle n'a d'indisponibilité propre**.
+
+`rooms.threshold_violations()` les vérifie ; si l'une est violée, le solveur **bascule sur `rooms="full"` avec un `RuntimeWarning`**
+(le mode effectif est dans `stats["rooms_mode"]`). Toute évolution du modèle touchant aux salles (salles multi-types,
+indisponibilités de salles…) doit mettre à jour cette vérification.
+`rooms="full"` (variables `y[c,t,r]`) n'est conservé que pour les tests d'accord et le benchmark.
+
 ## Arborescence
 
 ```
