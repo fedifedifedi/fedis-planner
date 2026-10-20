@@ -1,0 +1,6309 @@
+{
+  "name": "large-s42",
+  "grid": {
+    "days": [
+      {
+        "name": "Lundi",
+        "slots": [
+          {
+            "start": "08:30",
+            "end": "10:00",
+            "late": false
+          },
+          {
+            "start": "10:10",
+            "end": "11:40",
+            "late": false
+          },
+          {
+            "start": "11:50",
+            "end": "13:20",
+            "late": false
+          },
+          {
+            "start": "14:00",
+            "end": "15:30",
+            "late": false
+          },
+          {
+            "start": "15:40",
+            "end": "17:10",
+            "late": true
+          }
+        ]
+      },
+      {
+        "name": "Mardi",
+        "slots": [
+          {
+            "start": "08:30",
+            "end": "10:00",
+            "late": false
+          },
+          {
+            "start": "10:10",
+            "end": "11:40",
+            "late": false
+          },
+          {
+            "start": "11:50",
+            "end": "13:20",
+            "late": false
+          },
+          {
+            "start": "14:00",
+            "end": "15:30",
+            "late": false
+          },
+          {
+            "start": "15:40",
+            "end": "17:10",
+            "late": true
+          }
+        ]
+      },
+      {
+        "name": "Mercredi",
+        "slots": [
+          {
+            "start": "08:30",
+            "end": "10:00",
+            "late": false
+          },
+          {
+            "start": "10:10",
+            "end": "11:40",
+            "late": false
+          },
+          {
+            "start": "11:50",
+            "end": "13:20",
+            "late": false
+          },
+          {
+            "start": "14:00",
+            "end": "15:30",
+            "late": false
+          },
+          {
+            "start": "15:40",
+            "end": "17:10",
+            "late": true
+          }
+        ]
+      },
+      {
+        "name": "Jeudi",
+        "slots": [
+          {
+            "start": "08:30",
+            "end": "10:00",
+            "late": false
+          },
+          {
+            "start": "10:10",
+            "end": "11:40",
+            "late": false
+          },
+          {
+            "start": "11:50",
+            "end": "13:20",
+            "late": false
+          },
+          {
+            "start": "14:00",
+            "end": "15:30",
+            "late": false
+          },
+          {
+            "start": "15:40",
+            "end": "17:10",
+            "late": true
+          }
+        ]
+      },
+      {
+        "name": "Vendredi",
+        "slots": [
+          {
+            "start": "08:30",
+            "end": "10:00",
+            "late": false
+          },
+          {
+            "start": "10:10",
+            "end": "11:40",
+            "late": false
+          },
+          {
+            "start": "11:50",
+            "end": "13:20",
+            "late": false
+          },
+          {
+            "start": "14:00",
+            "end": "15:30",
+            "late": false
+          },
+          {
+            "start": "15:40",
+            "end": "17:10",
+            "late": true
+          }
+        ]
+      },
+      {
+        "name": "Samedi",
+        "slots": [
+          {
+            "start": "08:30",
+            "end": "10:00",
+            "late": false
+          },
+          {
+            "start": "10:10",
+            "end": "11:40",
+            "late": false
+          },
+          {
+            "start": "11:50",
+            "end": "13:20",
+            "late": false
+          }
+        ]
+      }
+    ]
+  },
+  "teachers": [
+    {
+      "id": "T001",
+      "name": "Salma Marchand",
+      "unavailable": [
+        13,
+        14
+      ]
+    },
+    {
+      "id": "T002",
+      "name": "Thomas Henry",
+      "unavailable": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "T003",
+      "name": "Julien Bonnet",
+      "unavailable": []
+    },
+    {
+      "id": "T004",
+      "name": "Sébastien Guerin",
+      "unavailable": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "T005",
+      "name": "Sarah Lefebvre",
+      "unavailable": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "T006",
+      "name": "Leïla Gauthier",
+      "unavailable": []
+    },
+    {
+      "id": "T007",
+      "name": "Antoine Vincent",
+      "unavailable": []
+    },
+    {
+      "id": "T008",
+      "name": "Lucas Laurent",
+      "unavailable": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "T009",
+      "name": "Sébastien Henry",
+      "unavailable": []
+    },
+    {
+      "id": "T010",
+      "name": "Thomas Fournier",
+      "unavailable": []
+    },
+    {
+      "id": "T011",
+      "name": "Marion Clément",
+      "unavailable": [
+        13,
+        14
+      ]
+    },
+    {
+      "id": "T012",
+      "name": "Sébastien Mathieu",
+      "unavailable": [
+        8,
+        9
+      ]
+    },
+    {
+      "id": "T013",
+      "name": "Olivier Mathieu",
+      "unavailable": []
+    },
+    {
+      "id": "T014",
+      "name": "Nadia Chevalier",
+      "unavailable": []
+    },
+    {
+      "id": "T015",
+      "name": "Julie Fournier",
+      "unavailable": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "id": "T016",
+      "name": "Romain Brahimi",
+      "unavailable": []
+    },
+    {
+      "id": "T017",
+      "name": "Julien Clément",
+      "unavailable": [
+        18,
+        19
+      ]
+    },
+    {
+      "id": "T018",
+      "name": "Julien Gauthier",
+      "unavailable": []
+    },
+    {
+      "id": "T019",
+      "name": "Nadia Denis",
+      "unavailable": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "T020",
+      "name": "Antoine Benali",
+      "unavailable": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "id": "T021",
+      "name": "Antoine Mathieu",
+      "unavailable": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "T022",
+      "name": "Mathieu Faure",
+      "unavailable": []
+    },
+    {
+      "id": "T023",
+      "name": "Julie Lemaire",
+      "unavailable": [
+        23,
+        24
+      ]
+    },
+    {
+      "id": "T024",
+      "name": "Julien Lambert",
+      "unavailable": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "id": "T025",
+      "name": "Emma Marchand",
+      "unavailable": [
+        13,
+        14
+      ]
+    },
+    {
+      "id": "T026",
+      "name": "Camille Benali",
+      "unavailable": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "id": "T027",
+      "name": "Céline Nicolas",
+      "unavailable": []
+    },
+    {
+      "id": "T028",
+      "name": "Benoît Girard",
+      "unavailable": []
+    },
+    {
+      "id": "T029",
+      "name": "Hamza Mathieu",
+      "unavailable": [
+        8,
+        9
+      ]
+    },
+    {
+      "id": "T030",
+      "name": "Romain Mansouri",
+      "unavailable": []
+    },
+    {
+      "id": "T031",
+      "name": "Antoine Bonnet",
+      "unavailable": []
+    },
+    {
+      "id": "T032",
+      "name": "Chloé Boyer",
+      "unavailable": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "id": "T033",
+      "name": "Julie Garcia",
+      "unavailable": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "id": "T034",
+      "name": "Sarah Fournier",
+      "unavailable": []
+    },
+    {
+      "id": "T035",
+      "name": "Claire Haddad",
+      "unavailable": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "T036",
+      "name": "Nour Faure",
+      "unavailable": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "T037",
+      "name": "Élodie Garcia",
+      "unavailable": []
+    },
+    {
+      "id": "T038",
+      "name": "Hamza Marchand",
+      "unavailable": []
+    },
+    {
+      "id": "T039",
+      "name": "Romain Clément",
+      "unavailable": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "T040",
+      "name": "Nicolas Rousseau",
+      "unavailable": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "T041",
+      "name": "Lucas Guerin",
+      "unavailable": [
+        18,
+        19
+      ]
+    },
+    {
+      "id": "T042",
+      "name": "Antoine Martin",
+      "unavailable": []
+    },
+    {
+      "id": "T043",
+      "name": "Alexandre Lefebvre",
+      "unavailable": []
+    },
+    {
+      "id": "T044",
+      "name": "Nicolas Fournier",
+      "unavailable": []
+    },
+    {
+      "id": "T045",
+      "name": "Nadia Marchand",
+      "unavailable": []
+    },
+    {
+      "id": "T046",
+      "name": "Pierre Chevalier",
+      "unavailable": []
+    },
+    {
+      "id": "T047",
+      "name": "Nadia Guerin",
+      "unavailable": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "T048",
+      "name": "Inès Fontaine",
+      "unavailable": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "T049",
+      "name": "Nicolas Brahimi",
+      "unavailable": []
+    },
+    {
+      "id": "T050",
+      "name": "Julie Mathieu",
+      "unavailable": []
+    },
+    {
+      "id": "T051",
+      "name": "Hugo Gauthier",
+      "unavailable": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "id": "T052",
+      "name": "Sophie Roux",
+      "unavailable": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "T053",
+      "name": "Sébastien Lambert",
+      "unavailable": []
+    },
+    {
+      "id": "T054",
+      "name": "Samir Robin",
+      "unavailable": []
+    },
+    {
+      "id": "T055",
+      "name": "Olivier Chevalier",
+      "unavailable": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "T056",
+      "name": "Amina Fontaine",
+      "unavailable": [
+        23,
+        24
+      ]
+    },
+    {
+      "id": "T057",
+      "name": "Pierre Fontaine",
+      "unavailable": []
+    },
+    {
+      "id": "T058",
+      "name": "Nadia Bernard",
+      "unavailable": []
+    },
+    {
+      "id": "T059",
+      "name": "Emma Girard",
+      "unavailable": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "T060",
+      "name": "Youssef Martin",
+      "unavailable": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "id": "T061",
+      "name": "Salma Benali",
+      "unavailable": []
+    },
+    {
+      "id": "T062",
+      "name": "Vincent Nicolas",
+      "unavailable": []
+    },
+    {
+      "id": "T063",
+      "name": "Inès Robin",
+      "unavailable": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "T064",
+      "name": "Rachid Perrin",
+      "unavailable": []
+    },
+    {
+      "id": "T065",
+      "name": "Mehdi Trabelsi",
+      "unavailable": []
+    },
+    {
+      "id": "T066",
+      "name": "Céline Dubois",
+      "unavailable": []
+    },
+    {
+      "id": "T067",
+      "name": "Karim Perrin",
+      "unavailable": []
+    },
+    {
+      "id": "T068",
+      "name": "Sophie Haddad",
+      "unavailable": []
+    },
+    {
+      "id": "T069",
+      "name": "Benoît Faure",
+      "unavailable": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "T070",
+      "name": "Antoine Nicolas",
+      "unavailable": []
+    },
+    {
+      "id": "T071",
+      "name": "Alexandre Morel",
+      "unavailable": []
+    },
+    {
+      "id": "T072",
+      "name": "Sarah Lemaire",
+      "unavailable": []
+    },
+    {
+      "id": "T073",
+      "name": "Nadia Lefebvre",
+      "unavailable": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "id": "T074",
+      "name": "Thomas Garcia",
+      "unavailable": []
+    },
+    {
+      "id": "T075",
+      "name": "Samir Roux",
+      "unavailable": []
+    },
+    {
+      "id": "T076",
+      "name": "Salma Gauthier",
+      "unavailable": []
+    },
+    {
+      "id": "T077",
+      "name": "Inès Masson",
+      "unavailable": []
+    },
+    {
+      "id": "T078",
+      "name": "Élodie Haddad",
+      "unavailable": []
+    },
+    {
+      "id": "T079",
+      "name": "Inès Guerin",
+      "unavailable": []
+    },
+    {
+      "id": "T080",
+      "name": "Inès Benali",
+      "unavailable": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "T081",
+      "name": "Camille Marchand",
+      "unavailable": []
+    },
+    {
+      "id": "T082",
+      "name": "Marion Mercier",
+      "unavailable": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "T083",
+      "name": "Hugo Nicolas",
+      "unavailable": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "T084",
+      "name": "Hamza Blanc",
+      "unavailable": []
+    },
+    {
+      "id": "T085",
+      "name": "Marion Boyer",
+      "unavailable": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "id": "T086",
+      "name": "Benoît Benali",
+      "unavailable": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "T087",
+      "name": "Karim Nicolas",
+      "unavailable": []
+    },
+    {
+      "id": "T088",
+      "name": "Vincent Benali",
+      "unavailable": []
+    },
+    {
+      "id": "T089",
+      "name": "Salma Robin",
+      "unavailable": []
+    },
+    {
+      "id": "T090",
+      "name": "Élodie Duval",
+      "unavailable": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "id": "T091",
+      "name": "Olivier Haddad",
+      "unavailable": []
+    },
+    {
+      "id": "T092",
+      "name": "Sébastien Haddad",
+      "unavailable": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "T093",
+      "name": "Élodie Lambert",
+      "unavailable": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "T094",
+      "name": "Samir Nicolas",
+      "unavailable": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "T095",
+      "name": "Pierre Vincent",
+      "unavailable": [
+        13,
+        14
+      ]
+    },
+    {
+      "id": "T096",
+      "name": "Hugo Lemaire",
+      "unavailable": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "T097",
+      "name": "Salma Duval",
+      "unavailable": []
+    },
+    {
+      "id": "T098",
+      "name": "Hamza Fournier",
+      "unavailable": []
+    },
+    {
+      "id": "T099",
+      "name": "Emma Robin",
+      "unavailable": []
+    },
+    {
+      "id": "T100",
+      "name": "Antoine Fournier",
+      "unavailable": []
+    },
+    {
+      "id": "T101",
+      "name": "Hamza Dubois",
+      "unavailable": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "T102",
+      "name": "Manon Brahimi",
+      "unavailable": []
+    }
+  ],
+  "rooms": [
+    {
+      "id": "AMPHI-1",
+      "name": "Amphi Turing",
+      "capacity": 220,
+      "type": "CM"
+    },
+    {
+      "id": "AMPHI-2",
+      "name": "Amphi Curie",
+      "capacity": 200,
+      "type": "CM"
+    },
+    {
+      "id": "B101",
+      "name": "Salle B101",
+      "capacity": 50,
+      "type": "TD"
+    },
+    {
+      "id": "B102",
+      "name": "Salle B102",
+      "capacity": 60,
+      "type": "TD"
+    },
+    {
+      "id": "B103",
+      "name": "Salle B103",
+      "capacity": 50,
+      "type": "TD"
+    },
+    {
+      "id": "B104",
+      "name": "Salle B104",
+      "capacity": 50,
+      "type": "TD"
+    },
+    {
+      "id": "B105",
+      "name": "Salle B105",
+      "capacity": 40,
+      "type": "TD"
+    },
+    {
+      "id": "B106",
+      "name": "Salle B106",
+      "capacity": 60,
+      "type": "TD"
+    },
+    {
+      "id": "B107",
+      "name": "Salle B107",
+      "capacity": 60,
+      "type": "TD"
+    },
+    {
+      "id": "B108",
+      "name": "Salle B108",
+      "capacity": 60,
+      "type": "TD"
+    },
+    {
+      "id": "B109",
+      "name": "Salle B109",
+      "capacity": 60,
+      "type": "TD"
+    },
+    {
+      "id": "L201",
+      "name": "Labo info L201",
+      "capacity": 20,
+      "type": "TP"
+    },
+    {
+      "id": "L202",
+      "name": "Labo info L202",
+      "capacity": 20,
+      "type": "TP"
+    },
+    {
+      "id": "L203",
+      "name": "Labo info L203",
+      "capacity": 30,
+      "type": "TP"
+    },
+    {
+      "id": "L204",
+      "name": "Labo info L204",
+      "capacity": 20,
+      "type": "TP"
+    },
+    {
+      "id": "L205",
+      "name": "Labo info L205",
+      "capacity": 40,
+      "type": "TP"
+    },
+    {
+      "id": "L206",
+      "name": "Labo info L206",
+      "capacity": 20,
+      "type": "TP"
+    },
+    {
+      "id": "L207",
+      "name": "Labo info L207",
+      "capacity": 30,
+      "type": "TP"
+    },
+    {
+      "id": "L208",
+      "name": "Labo info L208",
+      "capacity": 40,
+      "type": "TP"
+    },
+    {
+      "id": "L209",
+      "name": "Labo info L209",
+      "capacity": 40,
+      "type": "TP"
+    },
+    {
+      "id": "L210",
+      "name": "Labo info L210",
+      "capacity": 30,
+      "type": "TP"
+    },
+    {
+      "id": "L301",
+      "name": "Labo info L301",
+      "capacity": 30,
+      "type": "TP"
+    },
+    {
+      "id": "L302",
+      "name": "Labo info L302",
+      "capacity": 40,
+      "type": "TP"
+    },
+    {
+      "id": "L303",
+      "name": "Labo info L303",
+      "capacity": 20,
+      "type": "TP"
+    },
+    {
+      "id": "L304",
+      "name": "Labo info L304",
+      "capacity": 20,
+      "type": "TP"
+    },
+    {
+      "id": "L305",
+      "name": "Labo info L305",
+      "capacity": 40,
+      "type": "TP"
+    },
+    {
+      "id": "L306",
+      "name": "Labo info L306",
+      "capacity": 40,
+      "type": "TP"
+    },
+    {
+      "id": "L307",
+      "name": "Labo info L307",
+      "capacity": 40,
+      "type": "TP"
+    },
+    {
+      "id": "L308",
+      "name": "Labo info L308",
+      "capacity": 20,
+      "type": "TP"
+    },
+    {
+      "id": "L309",
+      "name": "Labo info L309",
+      "capacity": 20,
+      "type": "TP"
+    },
+    {
+      "id": "L310",
+      "name": "Labo info L310",
+      "capacity": 40,
+      "type": "TP"
+    }
+  ],
+  "groups": [
+    {
+      "id": "L1",
+      "name": "Promo L1",
+      "size": 197,
+      "parent": null
+    },
+    {
+      "id": "L1-G1",
+      "name": "L1-G1",
+      "size": 30,
+      "parent": "L1"
+    },
+    {
+      "id": "L1-G1a",
+      "name": "L1-G1a",
+      "size": 15,
+      "parent": "L1-G1"
+    },
+    {
+      "id": "L1-G1b",
+      "name": "L1-G1b",
+      "size": 15,
+      "parent": "L1-G1"
+    },
+    {
+      "id": "L1-G2",
+      "name": "L1-G2",
+      "size": 35,
+      "parent": "L1"
+    },
+    {
+      "id": "L1-G2a",
+      "name": "L1-G2a",
+      "size": 17,
+      "parent": "L1-G2"
+    },
+    {
+      "id": "L1-G2b",
+      "name": "L1-G2b",
+      "size": 18,
+      "parent": "L1-G2"
+    },
+    {
+      "id": "L1-G3",
+      "name": "L1-G3",
+      "size": 31,
+      "parent": "L1"
+    },
+    {
+      "id": "L1-G3a",
+      "name": "L1-G3a",
+      "size": 15,
+      "parent": "L1-G3"
+    },
+    {
+      "id": "L1-G3b",
+      "name": "L1-G3b",
+      "size": 16,
+      "parent": "L1-G3"
+    },
+    {
+      "id": "L1-G4",
+      "name": "L1-G4",
+      "size": 36,
+      "parent": "L1"
+    },
+    {
+      "id": "L1-G4a",
+      "name": "L1-G4a",
+      "size": 18,
+      "parent": "L1-G4"
+    },
+    {
+      "id": "L1-G4b",
+      "name": "L1-G4b",
+      "size": 18,
+      "parent": "L1-G4"
+    },
+    {
+      "id": "L1-G5",
+      "name": "L1-G5",
+      "size": 32,
+      "parent": "L1"
+    },
+    {
+      "id": "L1-G5a",
+      "name": "L1-G5a",
+      "size": 17,
+      "parent": "L1-G5"
+    },
+    {
+      "id": "L1-G5b",
+      "name": "L1-G5b",
+      "size": 15,
+      "parent": "L1-G5"
+    },
+    {
+      "id": "L1-G6",
+      "name": "L1-G6",
+      "size": 33,
+      "parent": "L1"
+    },
+    {
+      "id": "L1-G6a",
+      "name": "L1-G6a",
+      "size": 18,
+      "parent": "L1-G6"
+    },
+    {
+      "id": "L1-G6b",
+      "name": "L1-G6b",
+      "size": 15,
+      "parent": "L1-G6"
+    },
+    {
+      "id": "L2",
+      "name": "Promo L2",
+      "size": 190,
+      "parent": null
+    },
+    {
+      "id": "L2-G1",
+      "name": "L2-G1",
+      "size": 35,
+      "parent": "L2"
+    },
+    {
+      "id": "L2-G1a",
+      "name": "L2-G1a",
+      "size": 17,
+      "parent": "L2-G1"
+    },
+    {
+      "id": "L2-G1b",
+      "name": "L2-G1b",
+      "size": 18,
+      "parent": "L2-G1"
+    },
+    {
+      "id": "L2-G2",
+      "name": "L2-G2",
+      "size": 33,
+      "parent": "L2"
+    },
+    {
+      "id": "L2-G2a",
+      "name": "L2-G2a",
+      "size": 18,
+      "parent": "L2-G2"
+    },
+    {
+      "id": "L2-G2b",
+      "name": "L2-G2b",
+      "size": 15,
+      "parent": "L2-G2"
+    },
+    {
+      "id": "L2-G3",
+      "name": "L2-G3",
+      "size": 32,
+      "parent": "L2"
+    },
+    {
+      "id": "L2-G3a",
+      "name": "L2-G3a",
+      "size": 14,
+      "parent": "L2-G3"
+    },
+    {
+      "id": "L2-G3b",
+      "name": "L2-G3b",
+      "size": 18,
+      "parent": "L2-G3"
+    },
+    {
+      "id": "L2-G4",
+      "name": "L2-G4",
+      "size": 29,
+      "parent": "L2"
+    },
+    {
+      "id": "L2-G4a",
+      "name": "L2-G4a",
+      "size": 14,
+      "parent": "L2-G4"
+    },
+    {
+      "id": "L2-G4b",
+      "name": "L2-G4b",
+      "size": 15,
+      "parent": "L2-G4"
+    },
+    {
+      "id": "L2-G5",
+      "name": "L2-G5",
+      "size": 32,
+      "parent": "L2"
+    },
+    {
+      "id": "L2-G5a",
+      "name": "L2-G5a",
+      "size": 14,
+      "parent": "L2-G5"
+    },
+    {
+      "id": "L2-G5b",
+      "name": "L2-G5b",
+      "size": 18,
+      "parent": "L2-G5"
+    },
+    {
+      "id": "L2-G6",
+      "name": "L2-G6",
+      "size": 29,
+      "parent": "L2"
+    },
+    {
+      "id": "L2-G6a",
+      "name": "L2-G6a",
+      "size": 14,
+      "parent": "L2-G6"
+    },
+    {
+      "id": "L2-G6b",
+      "name": "L2-G6b",
+      "size": 15,
+      "parent": "L2-G6"
+    },
+    {
+      "id": "L3",
+      "name": "Promo L3",
+      "size": 188,
+      "parent": null
+    },
+    {
+      "id": "L3-G1",
+      "name": "L3-G1",
+      "size": 28,
+      "parent": "L3"
+    },
+    {
+      "id": "L3-G1a",
+      "name": "L3-G1a",
+      "size": 14,
+      "parent": "L3-G1"
+    },
+    {
+      "id": "L3-G1b",
+      "name": "L3-G1b",
+      "size": 14,
+      "parent": "L3-G1"
+    },
+    {
+      "id": "L3-G2",
+      "name": "L3-G2",
+      "size": 33,
+      "parent": "L3"
+    },
+    {
+      "id": "L3-G2a",
+      "name": "L3-G2a",
+      "size": 15,
+      "parent": "L3-G2"
+    },
+    {
+      "id": "L3-G2b",
+      "name": "L3-G2b",
+      "size": 18,
+      "parent": "L3-G2"
+    },
+    {
+      "id": "L3-G3",
+      "name": "L3-G3",
+      "size": 30,
+      "parent": "L3"
+    },
+    {
+      "id": "L3-G3a",
+      "name": "L3-G3a",
+      "size": 14,
+      "parent": "L3-G3"
+    },
+    {
+      "id": "L3-G3b",
+      "name": "L3-G3b",
+      "size": 16,
+      "parent": "L3-G3"
+    },
+    {
+      "id": "L3-G4",
+      "name": "L3-G4",
+      "size": 36,
+      "parent": "L3"
+    },
+    {
+      "id": "L3-G4a",
+      "name": "L3-G4a",
+      "size": 18,
+      "parent": "L3-G4"
+    },
+    {
+      "id": "L3-G4b",
+      "name": "L3-G4b",
+      "size": 18,
+      "parent": "L3-G4"
+    },
+    {
+      "id": "L3-G5",
+      "name": "L3-G5",
+      "size": 32,
+      "parent": "L3"
+    },
+    {
+      "id": "L3-G5a",
+      "name": "L3-G5a",
+      "size": 15,
+      "parent": "L3-G5"
+    },
+    {
+      "id": "L3-G5b",
+      "name": "L3-G5b",
+      "size": 17,
+      "parent": "L3-G5"
+    },
+    {
+      "id": "L3-G6",
+      "name": "L3-G6",
+      "size": 29,
+      "parent": "L3"
+    },
+    {
+      "id": "L3-G6a",
+      "name": "L3-G6a",
+      "size": 15,
+      "parent": "L3-G6"
+    },
+    {
+      "id": "L3-G6b",
+      "name": "L3-G6b",
+      "size": 14,
+      "parent": "L3-G6"
+    },
+    {
+      "id": "M1",
+      "name": "Promo M1",
+      "size": 198,
+      "parent": null
+    },
+    {
+      "id": "M1-G1",
+      "name": "M1-G1",
+      "size": 34,
+      "parent": "M1"
+    },
+    {
+      "id": "M1-G1a",
+      "name": "M1-G1a",
+      "size": 16,
+      "parent": "M1-G1"
+    },
+    {
+      "id": "M1-G1b",
+      "name": "M1-G1b",
+      "size": 18,
+      "parent": "M1-G1"
+    },
+    {
+      "id": "M1-G2",
+      "name": "M1-G2",
+      "size": 30,
+      "parent": "M1"
+    },
+    {
+      "id": "M1-G2a",
+      "name": "M1-G2a",
+      "size": 16,
+      "parent": "M1-G2"
+    },
+    {
+      "id": "M1-G2b",
+      "name": "M1-G2b",
+      "size": 14,
+      "parent": "M1-G2"
+    },
+    {
+      "id": "M1-G3",
+      "name": "M1-G3",
+      "size": 34,
+      "parent": "M1"
+    },
+    {
+      "id": "M1-G3a",
+      "name": "M1-G3a",
+      "size": 16,
+      "parent": "M1-G3"
+    },
+    {
+      "id": "M1-G3b",
+      "name": "M1-G3b",
+      "size": 18,
+      "parent": "M1-G3"
+    },
+    {
+      "id": "M1-G4",
+      "name": "M1-G4",
+      "size": 33,
+      "parent": "M1"
+    },
+    {
+      "id": "M1-G4a",
+      "name": "M1-G4a",
+      "size": 16,
+      "parent": "M1-G4"
+    },
+    {
+      "id": "M1-G4b",
+      "name": "M1-G4b",
+      "size": 17,
+      "parent": "M1-G4"
+    },
+    {
+      "id": "M1-G5",
+      "name": "M1-G5",
+      "size": 33,
+      "parent": "M1"
+    },
+    {
+      "id": "M1-G5a",
+      "name": "M1-G5a",
+      "size": 16,
+      "parent": "M1-G5"
+    },
+    {
+      "id": "M1-G5b",
+      "name": "M1-G5b",
+      "size": 17,
+      "parent": "M1-G5"
+    },
+    {
+      "id": "M1-G6",
+      "name": "M1-G6",
+      "size": 34,
+      "parent": "M1"
+    },
+    {
+      "id": "M1-G6a",
+      "name": "M1-G6a",
+      "size": 16,
+      "parent": "M1-G6"
+    },
+    {
+      "id": "M1-G6b",
+      "name": "M1-G6b",
+      "size": 18,
+      "parent": "M1-G6"
+    },
+    {
+      "id": "M2",
+      "name": "Promo M2",
+      "size": 197,
+      "parent": null
+    },
+    {
+      "id": "M2-G1",
+      "name": "M2-G1",
+      "size": 35,
+      "parent": "M2"
+    },
+    {
+      "id": "M2-G1a",
+      "name": "M2-G1a",
+      "size": 18,
+      "parent": "M2-G1"
+    },
+    {
+      "id": "M2-G1b",
+      "name": "M2-G1b",
+      "size": 17,
+      "parent": "M2-G1"
+    },
+    {
+      "id": "M2-G2",
+      "name": "M2-G2",
+      "size": 32,
+      "parent": "M2"
+    },
+    {
+      "id": "M2-G2a",
+      "name": "M2-G2a",
+      "size": 15,
+      "parent": "M2-G2"
+    },
+    {
+      "id": "M2-G2b",
+      "name": "M2-G2b",
+      "size": 17,
+      "parent": "M2-G2"
+    },
+    {
+      "id": "M2-G3",
+      "name": "M2-G3",
+      "size": 33,
+      "parent": "M2"
+    },
+    {
+      "id": "M2-G3a",
+      "name": "M2-G3a",
+      "size": 17,
+      "parent": "M2-G3"
+    },
+    {
+      "id": "M2-G3b",
+      "name": "M2-G3b",
+      "size": 16,
+      "parent": "M2-G3"
+    },
+    {
+      "id": "M2-G4",
+      "name": "M2-G4",
+      "size": 31,
+      "parent": "M2"
+    },
+    {
+      "id": "M2-G4a",
+      "name": "M2-G4a",
+      "size": 15,
+      "parent": "M2-G4"
+    },
+    {
+      "id": "M2-G4b",
+      "name": "M2-G4b",
+      "size": 16,
+      "parent": "M2-G4"
+    },
+    {
+      "id": "M2-G5",
+      "name": "M2-G5",
+      "size": 35,
+      "parent": "M2"
+    },
+    {
+      "id": "M2-G5a",
+      "name": "M2-G5a",
+      "size": 18,
+      "parent": "M2-G5"
+    },
+    {
+      "id": "M2-G5b",
+      "name": "M2-G5b",
+      "size": 17,
+      "parent": "M2-G5"
+    },
+    {
+      "id": "M2-G6",
+      "name": "M2-G6",
+      "size": 31,
+      "parent": "M2"
+    },
+    {
+      "id": "M2-G6a",
+      "name": "M2-G6a",
+      "size": 15,
+      "parent": "M2-G6"
+    },
+    {
+      "id": "M2-G6b",
+      "name": "M2-G6b",
+      "size": 16,
+      "parent": "M2-G6"
+    }
+  ],
+  "courses": [
+    {
+      "id": "L1-ALGO-CM",
+      "subject": "Algorithmique",
+      "teacher_id": "T001",
+      "group_ids": [
+        "L1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ALGO-TD-G1",
+      "subject": "Algorithmique",
+      "teacher_id": "T001",
+      "group_ids": [
+        "L1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ALGO-TD-G2",
+      "subject": "Algorithmique",
+      "teacher_id": "T001",
+      "group_ids": [
+        "L1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ALGO-TD-G3",
+      "subject": "Algorithmique",
+      "teacher_id": "T001",
+      "group_ids": [
+        "L1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ALGO-TD-G4",
+      "subject": "Algorithmique",
+      "teacher_id": "T001",
+      "group_ids": [
+        "L1-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ALGO-TD-G5",
+      "subject": "Algorithmique",
+      "teacher_id": "T001",
+      "group_ids": [
+        "L1-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ALGO-TD-G6",
+      "subject": "Algorithmique",
+      "teacher_id": "T001",
+      "group_ids": [
+        "L1-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ALGO-TP-G1a",
+      "subject": "Algorithmique",
+      "teacher_id": "T002",
+      "group_ids": [
+        "L1-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ALGO-TP-G1b",
+      "subject": "Algorithmique",
+      "teacher_id": "T002",
+      "group_ids": [
+        "L1-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ALGO-TP-G2a",
+      "subject": "Algorithmique",
+      "teacher_id": "T002",
+      "group_ids": [
+        "L1-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ALGO-TP-G2b",
+      "subject": "Algorithmique",
+      "teacher_id": "T003",
+      "group_ids": [
+        "L1-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ALGO-TP-G3a",
+      "subject": "Algorithmique",
+      "teacher_id": "T003",
+      "group_ids": [
+        "L1-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ALGO-TP-G3b",
+      "subject": "Algorithmique",
+      "teacher_id": "T003",
+      "group_ids": [
+        "L1-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ALGO-TP-G4a",
+      "subject": "Algorithmique",
+      "teacher_id": "T004",
+      "group_ids": [
+        "L1-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ALGO-TP-G4b",
+      "subject": "Algorithmique",
+      "teacher_id": "T004",
+      "group_ids": [
+        "L1-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ALGO-TP-G5a",
+      "subject": "Algorithmique",
+      "teacher_id": "T005",
+      "group_ids": [
+        "L1-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ALGO-TP-G5b",
+      "subject": "Algorithmique",
+      "teacher_id": "T005",
+      "group_ids": [
+        "L1-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ALGO-TP-G6a",
+      "subject": "Algorithmique",
+      "teacher_id": "T006",
+      "group_ids": [
+        "L1-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ALGO-TP-G6b",
+      "subject": "Algorithmique",
+      "teacher_id": "T006",
+      "group_ids": [
+        "L1-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ANG-CM",
+      "subject": "Anglais",
+      "teacher_id": "T007",
+      "group_ids": [
+        "L1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ANG-TD-G1",
+      "subject": "Anglais",
+      "teacher_id": "T007",
+      "group_ids": [
+        "L1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ANG-TD-G2",
+      "subject": "Anglais",
+      "teacher_id": "T007",
+      "group_ids": [
+        "L1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ANG-TD-G3",
+      "subject": "Anglais",
+      "teacher_id": "T007",
+      "group_ids": [
+        "L1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ANG-TD-G4",
+      "subject": "Anglais",
+      "teacher_id": "T007",
+      "group_ids": [
+        "L1-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ANG-TD-G5",
+      "subject": "Anglais",
+      "teacher_id": "T007",
+      "group_ids": [
+        "L1-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ANG-TD-G6",
+      "subject": "Anglais",
+      "teacher_id": "T007",
+      "group_ids": [
+        "L1-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ARCHI-CM",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T008",
+      "group_ids": [
+        "L1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ARCHI-TD-G1",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T008",
+      "group_ids": [
+        "L1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ARCHI-TD-G2",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T008",
+      "group_ids": [
+        "L1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ARCHI-TD-G3",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T008",
+      "group_ids": [
+        "L1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ARCHI-TD-G4",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T008",
+      "group_ids": [
+        "L1-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ARCHI-TD-G5",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T008",
+      "group_ids": [
+        "L1-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ARCHI-TD-G6",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T008",
+      "group_ids": [
+        "L1-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ARCHI-TP-G1a",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T008",
+      "group_ids": [
+        "L1-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ARCHI-TP-G1b",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T009",
+      "group_ids": [
+        "L1-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ARCHI-TP-G2a",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T009",
+      "group_ids": [
+        "L1-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ARCHI-TP-G2b",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T009",
+      "group_ids": [
+        "L1-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ARCHI-TP-G3a",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T009",
+      "group_ids": [
+        "L1-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ARCHI-TP-G3b",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T010",
+      "group_ids": [
+        "L1-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ARCHI-TP-G4a",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T010",
+      "group_ids": [
+        "L1-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ARCHI-TP-G4b",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T010",
+      "group_ids": [
+        "L1-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ARCHI-TP-G5a",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T011",
+      "group_ids": [
+        "L1-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ARCHI-TP-G5b",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T011",
+      "group_ids": [
+        "L1-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ARCHI-TP-G6a",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T011",
+      "group_ids": [
+        "L1-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ARCHI-TP-G6b",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T012",
+      "group_ids": [
+        "L1-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-COM-CM",
+      "subject": "Communication",
+      "teacher_id": "T013",
+      "group_ids": [
+        "L1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-COM-TD-G1",
+      "subject": "Communication",
+      "teacher_id": "T013",
+      "group_ids": [
+        "L1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-COM-TD-G2",
+      "subject": "Communication",
+      "teacher_id": "T013",
+      "group_ids": [
+        "L1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-COM-TD-G3",
+      "subject": "Communication",
+      "teacher_id": "T013",
+      "group_ids": [
+        "L1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-COM-TD-G4",
+      "subject": "Communication",
+      "teacher_id": "T013",
+      "group_ids": [
+        "L1-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-COM-TD-G5",
+      "subject": "Communication",
+      "teacher_id": "T013",
+      "group_ids": [
+        "L1-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-COM-TD-G6",
+      "subject": "Communication",
+      "teacher_id": "T013",
+      "group_ids": [
+        "L1-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-PROG-CM",
+      "subject": "Programmation Python",
+      "teacher_id": "T014",
+      "group_ids": [
+        "L1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-PROG-TD-G1",
+      "subject": "Programmation Python",
+      "teacher_id": "T014",
+      "group_ids": [
+        "L1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-PROG-TD-G2",
+      "subject": "Programmation Python",
+      "teacher_id": "T014",
+      "group_ids": [
+        "L1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-PROG-TD-G3",
+      "subject": "Programmation Python",
+      "teacher_id": "T014",
+      "group_ids": [
+        "L1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-PROG-TD-G4",
+      "subject": "Programmation Python",
+      "teacher_id": "T014",
+      "group_ids": [
+        "L1-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-PROG-TD-G5",
+      "subject": "Programmation Python",
+      "teacher_id": "T014",
+      "group_ids": [
+        "L1-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-PROG-TD-G6",
+      "subject": "Programmation Python",
+      "teacher_id": "T014",
+      "group_ids": [
+        "L1-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-PROG-TP-G1a",
+      "subject": "Programmation Python",
+      "teacher_id": "T015",
+      "group_ids": [
+        "L1-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-PROG-TP-G1b",
+      "subject": "Programmation Python",
+      "teacher_id": "T015",
+      "group_ids": [
+        "L1-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-PROG-TP-G2a",
+      "subject": "Programmation Python",
+      "teacher_id": "T015",
+      "group_ids": [
+        "L1-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-PROG-TP-G2b",
+      "subject": "Programmation Python",
+      "teacher_id": "T016",
+      "group_ids": [
+        "L1-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-PROG-TP-G3a",
+      "subject": "Programmation Python",
+      "teacher_id": "T016",
+      "group_ids": [
+        "L1-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-PROG-TP-G3b",
+      "subject": "Programmation Python",
+      "teacher_id": "T016",
+      "group_ids": [
+        "L1-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-PROG-TP-G4a",
+      "subject": "Programmation Python",
+      "teacher_id": "T016",
+      "group_ids": [
+        "L1-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-PROG-TP-G4b",
+      "subject": "Programmation Python",
+      "teacher_id": "T016",
+      "group_ids": [
+        "L1-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-PROG-TP-G5a",
+      "subject": "Programmation Python",
+      "teacher_id": "T017",
+      "group_ids": [
+        "L1-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-PROG-TP-G5b",
+      "subject": "Programmation Python",
+      "teacher_id": "T017",
+      "group_ids": [
+        "L1-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-PROG-TP-G6a",
+      "subject": "Programmation Python",
+      "teacher_id": "T017",
+      "group_ids": [
+        "L1-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-PROG-TP-G6b",
+      "subject": "Programmation Python",
+      "teacher_id": "T018",
+      "group_ids": [
+        "L1-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-CM",
+      "subject": "Introduction au Web",
+      "teacher_id": "T019",
+      "group_ids": [
+        "L1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-WEB-TD-G1",
+      "subject": "Introduction au Web",
+      "teacher_id": "T019",
+      "group_ids": [
+        "L1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-WEB-TD-G2",
+      "subject": "Introduction au Web",
+      "teacher_id": "T019",
+      "group_ids": [
+        "L1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-WEB-TD-G3",
+      "subject": "Introduction au Web",
+      "teacher_id": "T019",
+      "group_ids": [
+        "L1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-WEB-TD-G4",
+      "subject": "Introduction au Web",
+      "teacher_id": "T020",
+      "group_ids": [
+        "L1-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-WEB-TD-G5",
+      "subject": "Introduction au Web",
+      "teacher_id": "T020",
+      "group_ids": [
+        "L1-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-WEB-TD-G6",
+      "subject": "Introduction au Web",
+      "teacher_id": "T020",
+      "group_ids": [
+        "L1-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-WEB-TP-G1a",
+      "subject": "Introduction au Web",
+      "teacher_id": "T020",
+      "group_ids": [
+        "L1-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-TP-G1b",
+      "subject": "Introduction au Web",
+      "teacher_id": "T020",
+      "group_ids": [
+        "L1-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-TP-G2a",
+      "subject": "Introduction au Web",
+      "teacher_id": "T020",
+      "group_ids": [
+        "L1-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-TP-G2b",
+      "subject": "Introduction au Web",
+      "teacher_id": "T021",
+      "group_ids": [
+        "L1-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-TP-G3a",
+      "subject": "Introduction au Web",
+      "teacher_id": "T021",
+      "group_ids": [
+        "L1-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-TP-G3b",
+      "subject": "Introduction au Web",
+      "teacher_id": "T021",
+      "group_ids": [
+        "L1-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-TP-G4a",
+      "subject": "Introduction au Web",
+      "teacher_id": "T021",
+      "group_ids": [
+        "L1-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-TP-G4b",
+      "subject": "Introduction au Web",
+      "teacher_id": "T022",
+      "group_ids": [
+        "L1-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-TP-G5a",
+      "subject": "Introduction au Web",
+      "teacher_id": "T022",
+      "group_ids": [
+        "L1-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-TP-G5b",
+      "subject": "Introduction au Web",
+      "teacher_id": "T022",
+      "group_ids": [
+        "L1-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-TP-G6a",
+      "subject": "Introduction au Web",
+      "teacher_id": "T023",
+      "group_ids": [
+        "L1-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-TP-G6b",
+      "subject": "Introduction au Web",
+      "teacher_id": "T023",
+      "group_ids": [
+        "L1-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-ANG-CM",
+      "subject": "Anglais",
+      "teacher_id": "T007",
+      "group_ids": [
+        "L2"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-ANG-TD-G1",
+      "subject": "Anglais",
+      "teacher_id": "T007",
+      "group_ids": [
+        "L2-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-ANG-TD-G2",
+      "subject": "Anglais",
+      "teacher_id": "T007",
+      "group_ids": [
+        "L2-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-ANG-TD-G3",
+      "subject": "Anglais",
+      "teacher_id": "T024",
+      "group_ids": [
+        "L2-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-ANG-TD-G4",
+      "subject": "Anglais",
+      "teacher_id": "T024",
+      "group_ids": [
+        "L2-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-ANG-TD-G5",
+      "subject": "Anglais",
+      "teacher_id": "T024",
+      "group_ids": [
+        "L2-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-ANG-TD-G6",
+      "subject": "Anglais",
+      "teacher_id": "T024",
+      "group_ids": [
+        "L2-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-BDD-CM",
+      "subject": "Bases de données",
+      "teacher_id": "T025",
+      "group_ids": [
+        "L2"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-BDD-TD-G1",
+      "subject": "Bases de données",
+      "teacher_id": "T025",
+      "group_ids": [
+        "L2-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-BDD-TD-G2",
+      "subject": "Bases de données",
+      "teacher_id": "T025",
+      "group_ids": [
+        "L2-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-BDD-TD-G3",
+      "subject": "Bases de données",
+      "teacher_id": "T025",
+      "group_ids": [
+        "L2-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-BDD-TD-G4",
+      "subject": "Bases de données",
+      "teacher_id": "T025",
+      "group_ids": [
+        "L2-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-BDD-TD-G5",
+      "subject": "Bases de données",
+      "teacher_id": "T025",
+      "group_ids": [
+        "L2-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-BDD-TD-G6",
+      "subject": "Bases de données",
+      "teacher_id": "T025",
+      "group_ids": [
+        "L2-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-BDD-TP-G1a",
+      "subject": "Bases de données",
+      "teacher_id": "T026",
+      "group_ids": [
+        "L2-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-BDD-TP-G1b",
+      "subject": "Bases de données",
+      "teacher_id": "T026",
+      "group_ids": [
+        "L2-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-BDD-TP-G2a",
+      "subject": "Bases de données",
+      "teacher_id": "T026",
+      "group_ids": [
+        "L2-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-BDD-TP-G2b",
+      "subject": "Bases de données",
+      "teacher_id": "T026",
+      "group_ids": [
+        "L2-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-BDD-TP-G3a",
+      "subject": "Bases de données",
+      "teacher_id": "T027",
+      "group_ids": [
+        "L2-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-BDD-TP-G3b",
+      "subject": "Bases de données",
+      "teacher_id": "T027",
+      "group_ids": [
+        "L2-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-BDD-TP-G4a",
+      "subject": "Bases de données",
+      "teacher_id": "T027",
+      "group_ids": [
+        "L2-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-BDD-TP-G4b",
+      "subject": "Bases de données",
+      "teacher_id": "T027",
+      "group_ids": [
+        "L2-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-BDD-TP-G5a",
+      "subject": "Bases de données",
+      "teacher_id": "T028",
+      "group_ids": [
+        "L2-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-BDD-TP-G5b",
+      "subject": "Bases de données",
+      "teacher_id": "T028",
+      "group_ids": [
+        "L2-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-BDD-TP-G6a",
+      "subject": "Bases de données",
+      "teacher_id": "T028",
+      "group_ids": [
+        "L2-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-BDD-TP-G6b",
+      "subject": "Bases de données",
+      "teacher_id": "T029",
+      "group_ids": [
+        "L2-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-GEST-CM",
+      "subject": "Gestion d'entreprise",
+      "teacher_id": "T030",
+      "group_ids": [
+        "L2"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-GEST-TD-G1",
+      "subject": "Gestion d'entreprise",
+      "teacher_id": "T030",
+      "group_ids": [
+        "L2-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-GEST-TD-G2",
+      "subject": "Gestion d'entreprise",
+      "teacher_id": "T030",
+      "group_ids": [
+        "L2-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-GEST-TD-G3",
+      "subject": "Gestion d'entreprise",
+      "teacher_id": "T030",
+      "group_ids": [
+        "L2-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-GEST-TD-G4",
+      "subject": "Gestion d'entreprise",
+      "teacher_id": "T030",
+      "group_ids": [
+        "L2-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-GEST-TD-G5",
+      "subject": "Gestion d'entreprise",
+      "teacher_id": "T030",
+      "group_ids": [
+        "L2-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-GEST-TD-G6",
+      "subject": "Gestion d'entreprise",
+      "teacher_id": "T030",
+      "group_ids": [
+        "L2-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-POO-CM",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T031",
+      "group_ids": [
+        "L2"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-POO-TD-G1",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T031",
+      "group_ids": [
+        "L2-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-POO-TD-G2",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T031",
+      "group_ids": [
+        "L2-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-POO-TD-G3",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T031",
+      "group_ids": [
+        "L2-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-POO-TD-G4",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T031",
+      "group_ids": [
+        "L2-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-POO-TD-G5",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T031",
+      "group_ids": [
+        "L2-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-POO-TD-G6",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T031",
+      "group_ids": [
+        "L2-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-POO-TP-G1a",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T032",
+      "group_ids": [
+        "L2-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-POO-TP-G1b",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T032",
+      "group_ids": [
+        "L2-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-POO-TP-G2a",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T032",
+      "group_ids": [
+        "L2-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-POO-TP-G2b",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T033",
+      "group_ids": [
+        "L2-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-POO-TP-G3a",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T033",
+      "group_ids": [
+        "L2-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-POO-TP-G3b",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T033",
+      "group_ids": [
+        "L2-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-POO-TP-G4a",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T033",
+      "group_ids": [
+        "L2-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-POO-TP-G4b",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T033",
+      "group_ids": [
+        "L2-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-POO-TP-G5a",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T034",
+      "group_ids": [
+        "L2-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-POO-TP-G5b",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T034",
+      "group_ids": [
+        "L2-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-POO-TP-G6a",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T034",
+      "group_ids": [
+        "L2-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-POO-TP-G6b",
+      "subject": "Programmation orientée objet",
+      "teacher_id": "T035",
+      "group_ids": [
+        "L2-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-PROBA-CM",
+      "subject": "Probabilités",
+      "teacher_id": "T036",
+      "group_ids": [
+        "L2"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-PROBA-TD-G1",
+      "subject": "Probabilités",
+      "teacher_id": "T036",
+      "group_ids": [
+        "L2-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-PROBA-TD-G2",
+      "subject": "Probabilités",
+      "teacher_id": "T036",
+      "group_ids": [
+        "L2-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-PROBA-TD-G3",
+      "subject": "Probabilités",
+      "teacher_id": "T036",
+      "group_ids": [
+        "L2-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-PROBA-TD-G4",
+      "subject": "Probabilités",
+      "teacher_id": "T036",
+      "group_ids": [
+        "L2-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-PROBA-TD-G5",
+      "subject": "Probabilités",
+      "teacher_id": "T037",
+      "group_ids": [
+        "L2-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-PROBA-TD-G6",
+      "subject": "Probabilités",
+      "teacher_id": "T037",
+      "group_ids": [
+        "L2-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-RES-CM",
+      "subject": "Réseaux",
+      "teacher_id": "T038",
+      "group_ids": [
+        "L2"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-RES-TD-G1",
+      "subject": "Réseaux",
+      "teacher_id": "T038",
+      "group_ids": [
+        "L2-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-RES-TD-G2",
+      "subject": "Réseaux",
+      "teacher_id": "T038",
+      "group_ids": [
+        "L2-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-RES-TD-G3",
+      "subject": "Réseaux",
+      "teacher_id": "T038",
+      "group_ids": [
+        "L2-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-RES-TD-G4",
+      "subject": "Réseaux",
+      "teacher_id": "T038",
+      "group_ids": [
+        "L2-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-RES-TD-G5",
+      "subject": "Réseaux",
+      "teacher_id": "T038",
+      "group_ids": [
+        "L2-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-RES-TD-G6",
+      "subject": "Réseaux",
+      "teacher_id": "T038",
+      "group_ids": [
+        "L2-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L2-RES-TP-G1a",
+      "subject": "Réseaux",
+      "teacher_id": "T038",
+      "group_ids": [
+        "L2-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-RES-TP-G1b",
+      "subject": "Réseaux",
+      "teacher_id": "T039",
+      "group_ids": [
+        "L2-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-RES-TP-G2a",
+      "subject": "Réseaux",
+      "teacher_id": "T039",
+      "group_ids": [
+        "L2-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-RES-TP-G2b",
+      "subject": "Réseaux",
+      "teacher_id": "T039",
+      "group_ids": [
+        "L2-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-RES-TP-G3a",
+      "subject": "Réseaux",
+      "teacher_id": "T040",
+      "group_ids": [
+        "L2-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-RES-TP-G3b",
+      "subject": "Réseaux",
+      "teacher_id": "T040",
+      "group_ids": [
+        "L2-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-RES-TP-G4a",
+      "subject": "Réseaux",
+      "teacher_id": "T040",
+      "group_ids": [
+        "L2-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-RES-TP-G4b",
+      "subject": "Réseaux",
+      "teacher_id": "T041",
+      "group_ids": [
+        "L2-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-RES-TP-G5a",
+      "subject": "Réseaux",
+      "teacher_id": "T041",
+      "group_ids": [
+        "L2-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-RES-TP-G5b",
+      "subject": "Réseaux",
+      "teacher_id": "T041",
+      "group_ids": [
+        "L2-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-RES-TP-G6a",
+      "subject": "Réseaux",
+      "teacher_id": "T041",
+      "group_ids": [
+        "L2-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L2-RES-TP-G6b",
+      "subject": "Réseaux",
+      "teacher_id": "T042",
+      "group_ids": [
+        "L2-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-ANG-CM",
+      "subject": "Anglais",
+      "teacher_id": "T024",
+      "group_ids": [
+        "L3"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-ANG-TD-G1",
+      "subject": "Anglais",
+      "teacher_id": "T024",
+      "group_ids": [
+        "L3-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-ANG-TD-G2",
+      "subject": "Anglais",
+      "teacher_id": "T043",
+      "group_ids": [
+        "L3-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-ANG-TD-G3",
+      "subject": "Anglais",
+      "teacher_id": "T043",
+      "group_ids": [
+        "L3-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-ANG-TD-G4",
+      "subject": "Anglais",
+      "teacher_id": "T043",
+      "group_ids": [
+        "L3-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-ANG-TD-G5",
+      "subject": "Anglais",
+      "teacher_id": "T043",
+      "group_ids": [
+        "L3-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-ANG-TD-G6",
+      "subject": "Anglais",
+      "teacher_id": "T043",
+      "group_ids": [
+        "L3-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-COMP-CM",
+      "subject": "Compilation",
+      "teacher_id": "T044",
+      "group_ids": [
+        "L3"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-COMP-TD-G1",
+      "subject": "Compilation",
+      "teacher_id": "T044",
+      "group_ids": [
+        "L3-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-COMP-TD-G2",
+      "subject": "Compilation",
+      "teacher_id": "T044",
+      "group_ids": [
+        "L3-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-COMP-TD-G3",
+      "subject": "Compilation",
+      "teacher_id": "T044",
+      "group_ids": [
+        "L3-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-COMP-TD-G4",
+      "subject": "Compilation",
+      "teacher_id": "T044",
+      "group_ids": [
+        "L3-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-COMP-TD-G5",
+      "subject": "Compilation",
+      "teacher_id": "T044",
+      "group_ids": [
+        "L3-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-COMP-TD-G6",
+      "subject": "Compilation",
+      "teacher_id": "T044",
+      "group_ids": [
+        "L3-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-COMP-TP-G1a",
+      "subject": "Compilation",
+      "teacher_id": "T044",
+      "group_ids": [
+        "L3-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-COMP-TP-G1b",
+      "subject": "Compilation",
+      "teacher_id": "T045",
+      "group_ids": [
+        "L3-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-COMP-TP-G2a",
+      "subject": "Compilation",
+      "teacher_id": "T045",
+      "group_ids": [
+        "L3-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-COMP-TP-G2b",
+      "subject": "Compilation",
+      "teacher_id": "T045",
+      "group_ids": [
+        "L3-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-COMP-TP-G3a",
+      "subject": "Compilation",
+      "teacher_id": "T046",
+      "group_ids": [
+        "L3-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-COMP-TP-G3b",
+      "subject": "Compilation",
+      "teacher_id": "T046",
+      "group_ids": [
+        "L3-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-COMP-TP-G4a",
+      "subject": "Compilation",
+      "teacher_id": "T046",
+      "group_ids": [
+        "L3-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-COMP-TP-G4b",
+      "subject": "Compilation",
+      "teacher_id": "T047",
+      "group_ids": [
+        "L3-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-COMP-TP-G5a",
+      "subject": "Compilation",
+      "teacher_id": "T047",
+      "group_ids": [
+        "L3-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-COMP-TP-G5b",
+      "subject": "Compilation",
+      "teacher_id": "T047",
+      "group_ids": [
+        "L3-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-COMP-TP-G6a",
+      "subject": "Compilation",
+      "teacher_id": "T048",
+      "group_ids": [
+        "L3-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-COMP-TP-G6b",
+      "subject": "Compilation",
+      "teacher_id": "T048",
+      "group_ids": [
+        "L3-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-DROIT-CM",
+      "subject": "Droit du numérique",
+      "teacher_id": "T049",
+      "group_ids": [
+        "L3"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-DROIT-TD-G1",
+      "subject": "Droit du numérique",
+      "teacher_id": "T049",
+      "group_ids": [
+        "L3-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-DROIT-TD-G2",
+      "subject": "Droit du numérique",
+      "teacher_id": "T049",
+      "group_ids": [
+        "L3-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-DROIT-TD-G3",
+      "subject": "Droit du numérique",
+      "teacher_id": "T049",
+      "group_ids": [
+        "L3-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-DROIT-TD-G4",
+      "subject": "Droit du numérique",
+      "teacher_id": "T049",
+      "group_ids": [
+        "L3-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-DROIT-TD-G5",
+      "subject": "Droit du numérique",
+      "teacher_id": "T049",
+      "group_ids": [
+        "L3-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-DROIT-TD-G6",
+      "subject": "Droit du numérique",
+      "teacher_id": "T050",
+      "group_ids": [
+        "L3-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-GL-CM",
+      "subject": "Génie logiciel",
+      "teacher_id": "T051",
+      "group_ids": [
+        "L3"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-GL-TD-G1",
+      "subject": "Génie logiciel",
+      "teacher_id": "T051",
+      "group_ids": [
+        "L3-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-GL-TD-G2",
+      "subject": "Génie logiciel",
+      "teacher_id": "T051",
+      "group_ids": [
+        "L3-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-GL-TD-G3",
+      "subject": "Génie logiciel",
+      "teacher_id": "T051",
+      "group_ids": [
+        "L3-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-GL-TD-G4",
+      "subject": "Génie logiciel",
+      "teacher_id": "T051",
+      "group_ids": [
+        "L3-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-GL-TD-G5",
+      "subject": "Génie logiciel",
+      "teacher_id": "T051",
+      "group_ids": [
+        "L3-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-GL-TD-G6",
+      "subject": "Génie logiciel",
+      "teacher_id": "T051",
+      "group_ids": [
+        "L3-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-GL-TP-G1a",
+      "subject": "Génie logiciel",
+      "teacher_id": "T052",
+      "group_ids": [
+        "L3-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-GL-TP-G1b",
+      "subject": "Génie logiciel",
+      "teacher_id": "T052",
+      "group_ids": [
+        "L3-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-GL-TP-G2a",
+      "subject": "Génie logiciel",
+      "teacher_id": "T053",
+      "group_ids": [
+        "L3-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-GL-TP-G2b",
+      "subject": "Génie logiciel",
+      "teacher_id": "T053",
+      "group_ids": [
+        "L3-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-GL-TP-G3a",
+      "subject": "Génie logiciel",
+      "teacher_id": "T053",
+      "group_ids": [
+        "L3-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-GL-TP-G3b",
+      "subject": "Génie logiciel",
+      "teacher_id": "T053",
+      "group_ids": [
+        "L3-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-GL-TP-G4a",
+      "subject": "Génie logiciel",
+      "teacher_id": "T054",
+      "group_ids": [
+        "L3-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-GL-TP-G4b",
+      "subject": "Génie logiciel",
+      "teacher_id": "T054",
+      "group_ids": [
+        "L3-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-GL-TP-G5a",
+      "subject": "Génie logiciel",
+      "teacher_id": "T054",
+      "group_ids": [
+        "L3-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-GL-TP-G5b",
+      "subject": "Génie logiciel",
+      "teacher_id": "T054",
+      "group_ids": [
+        "L3-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-GL-TP-G6a",
+      "subject": "Génie logiciel",
+      "teacher_id": "T054",
+      "group_ids": [
+        "L3-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-GL-TP-G6b",
+      "subject": "Génie logiciel",
+      "teacher_id": "T055",
+      "group_ids": [
+        "L3-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-RO-CM",
+      "subject": "Recherche opérationnelle",
+      "teacher_id": "T056",
+      "group_ids": [
+        "L3"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-RO-TD-G1",
+      "subject": "Recherche opérationnelle",
+      "teacher_id": "T056",
+      "group_ids": [
+        "L3-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-RO-TD-G2",
+      "subject": "Recherche opérationnelle",
+      "teacher_id": "T056",
+      "group_ids": [
+        "L3-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-RO-TD-G3",
+      "subject": "Recherche opérationnelle",
+      "teacher_id": "T056",
+      "group_ids": [
+        "L3-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-RO-TD-G4",
+      "subject": "Recherche opérationnelle",
+      "teacher_id": "T056",
+      "group_ids": [
+        "L3-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-RO-TD-G5",
+      "subject": "Recherche opérationnelle",
+      "teacher_id": "T056",
+      "group_ids": [
+        "L3-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-RO-TD-G6",
+      "subject": "Recherche opérationnelle",
+      "teacher_id": "T056",
+      "group_ids": [
+        "L3-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-SECU-CM",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T057",
+      "group_ids": [
+        "L3"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-SECU-TD-G1",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T057",
+      "group_ids": [
+        "L3-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-SECU-TD-G2",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T057",
+      "group_ids": [
+        "L3-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-SECU-TD-G3",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T057",
+      "group_ids": [
+        "L3-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-SECU-TD-G4",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T057",
+      "group_ids": [
+        "L3-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-SECU-TD-G5",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T057",
+      "group_ids": [
+        "L3-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-SECU-TD-G6",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T057",
+      "group_ids": [
+        "L3-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L3-SECU-TP-G1a",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T058",
+      "group_ids": [
+        "L3-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-SECU-TP-G1b",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T058",
+      "group_ids": [
+        "L3-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-SECU-TP-G2a",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T058",
+      "group_ids": [
+        "L3-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-SECU-TP-G2b",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T059",
+      "group_ids": [
+        "L3-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-SECU-TP-G3a",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T059",
+      "group_ids": [
+        "L3-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-SECU-TP-G3b",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T059",
+      "group_ids": [
+        "L3-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-SECU-TP-G4a",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T059",
+      "group_ids": [
+        "L3-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-SECU-TP-G4b",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T060",
+      "group_ids": [
+        "L3-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-SECU-TP-G5a",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T060",
+      "group_ids": [
+        "L3-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-SECU-TP-G5b",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T060",
+      "group_ids": [
+        "L3-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-SECU-TP-G6a",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T061",
+      "group_ids": [
+        "L3-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L3-SECU-TP-G6b",
+      "subject": "Sécurité informatique",
+      "teacher_id": "T061",
+      "group_ids": [
+        "L3-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-ANG-CM",
+      "subject": "Anglais",
+      "teacher_id": "T043",
+      "group_ids": [
+        "M1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ANG-TD-G1",
+      "subject": "Anglais",
+      "teacher_id": "T062",
+      "group_ids": [
+        "M1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ANG-TD-G2",
+      "subject": "Anglais",
+      "teacher_id": "T062",
+      "group_ids": [
+        "M1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ANG-TD-G3",
+      "subject": "Anglais",
+      "teacher_id": "T062",
+      "group_ids": [
+        "M1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ANG-TD-G4",
+      "subject": "Anglais",
+      "teacher_id": "T062",
+      "group_ids": [
+        "M1-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ANG-TD-G5",
+      "subject": "Anglais",
+      "teacher_id": "T062",
+      "group_ids": [
+        "M1-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ANG-TD-G6",
+      "subject": "Anglais",
+      "teacher_id": "T062",
+      "group_ids": [
+        "M1-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-CLOUD-CM",
+      "subject": "Cloud computing",
+      "teacher_id": "T063",
+      "group_ids": [
+        "M1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-CLOUD-TD-G1",
+      "subject": "Cloud computing",
+      "teacher_id": "T063",
+      "group_ids": [
+        "M1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-CLOUD-TD-G2",
+      "subject": "Cloud computing",
+      "teacher_id": "T063",
+      "group_ids": [
+        "M1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-CLOUD-TD-G3",
+      "subject": "Cloud computing",
+      "teacher_id": "T063",
+      "group_ids": [
+        "M1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-CLOUD-TD-G4",
+      "subject": "Cloud computing",
+      "teacher_id": "T063",
+      "group_ids": [
+        "M1-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-CLOUD-TD-G5",
+      "subject": "Cloud computing",
+      "teacher_id": "T064",
+      "group_ids": [
+        "M1-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-CLOUD-TD-G6",
+      "subject": "Cloud computing",
+      "teacher_id": "T064",
+      "group_ids": [
+        "M1-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-CLOUD-TP-G1a",
+      "subject": "Cloud computing",
+      "teacher_id": "T064",
+      "group_ids": [
+        "M1-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-CLOUD-TP-G1b",
+      "subject": "Cloud computing",
+      "teacher_id": "T064",
+      "group_ids": [
+        "M1-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-CLOUD-TP-G2a",
+      "subject": "Cloud computing",
+      "teacher_id": "T064",
+      "group_ids": [
+        "M1-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-CLOUD-TP-G2b",
+      "subject": "Cloud computing",
+      "teacher_id": "T064",
+      "group_ids": [
+        "M1-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-CLOUD-TP-G3a",
+      "subject": "Cloud computing",
+      "teacher_id": "T065",
+      "group_ids": [
+        "M1-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-CLOUD-TP-G3b",
+      "subject": "Cloud computing",
+      "teacher_id": "T065",
+      "group_ids": [
+        "M1-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-CLOUD-TP-G4a",
+      "subject": "Cloud computing",
+      "teacher_id": "T065",
+      "group_ids": [
+        "M1-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-CLOUD-TP-G4b",
+      "subject": "Cloud computing",
+      "teacher_id": "T065",
+      "group_ids": [
+        "M1-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-CLOUD-TP-G5a",
+      "subject": "Cloud computing",
+      "teacher_id": "T066",
+      "group_ids": [
+        "M1-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-CLOUD-TP-G5b",
+      "subject": "Cloud computing",
+      "teacher_id": "T066",
+      "group_ids": [
+        "M1-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-CLOUD-TP-G6a",
+      "subject": "Cloud computing",
+      "teacher_id": "T066",
+      "group_ids": [
+        "M1-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-CLOUD-TP-G6b",
+      "subject": "Cloud computing",
+      "teacher_id": "T067",
+      "group_ids": [
+        "M1-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-DIST-CM",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T068",
+      "group_ids": [
+        "M1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-DIST-TD-G1",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T068",
+      "group_ids": [
+        "M1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-DIST-TD-G2",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T068",
+      "group_ids": [
+        "M1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-DIST-TD-G3",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T068",
+      "group_ids": [
+        "M1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-DIST-TD-G4",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T068",
+      "group_ids": [
+        "M1-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-DIST-TD-G5",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T068",
+      "group_ids": [
+        "M1-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-DIST-TD-G6",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T068",
+      "group_ids": [
+        "M1-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-DIST-TP-G1a",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T069",
+      "group_ids": [
+        "M1-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-DIST-TP-G1b",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T069",
+      "group_ids": [
+        "M1-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-DIST-TP-G2a",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T069",
+      "group_ids": [
+        "M1-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-DIST-TP-G2b",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T070",
+      "group_ids": [
+        "M1-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-DIST-TP-G3a",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T070",
+      "group_ids": [
+        "M1-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-DIST-TP-G3b",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T070",
+      "group_ids": [
+        "M1-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-DIST-TP-G4a",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T070",
+      "group_ids": [
+        "M1-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-DIST-TP-G4b",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T071",
+      "group_ids": [
+        "M1-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-DIST-TP-G5a",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T071",
+      "group_ids": [
+        "M1-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-DIST-TP-G5b",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T071",
+      "group_ids": [
+        "M1-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-DIST-TP-G6a",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T071",
+      "group_ids": [
+        "M1-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-DIST-TP-G6b",
+      "subject": "Systèmes distribués",
+      "teacher_id": "T072",
+      "group_ids": [
+        "M1-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-ETH-CM",
+      "subject": "Éthique de l'IA",
+      "teacher_id": "T073",
+      "group_ids": [
+        "M1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ETH-TD-G1",
+      "subject": "Éthique de l'IA",
+      "teacher_id": "T073",
+      "group_ids": [
+        "M1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ETH-TD-G2",
+      "subject": "Éthique de l'IA",
+      "teacher_id": "T073",
+      "group_ids": [
+        "M1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ETH-TD-G3",
+      "subject": "Éthique de l'IA",
+      "teacher_id": "T073",
+      "group_ids": [
+        "M1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ETH-TD-G4",
+      "subject": "Éthique de l'IA",
+      "teacher_id": "T073",
+      "group_ids": [
+        "M1-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ETH-TD-G5",
+      "subject": "Éthique de l'IA",
+      "teacher_id": "T073",
+      "group_ids": [
+        "M1-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ETH-TD-G6",
+      "subject": "Éthique de l'IA",
+      "teacher_id": "T073",
+      "group_ids": [
+        "M1-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-GPROJ-CM",
+      "subject": "Gestion de projet",
+      "teacher_id": "T074",
+      "group_ids": [
+        "M1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-GPROJ-TD-G1",
+      "subject": "Gestion de projet",
+      "teacher_id": "T074",
+      "group_ids": [
+        "M1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-GPROJ-TD-G2",
+      "subject": "Gestion de projet",
+      "teacher_id": "T074",
+      "group_ids": [
+        "M1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-GPROJ-TD-G3",
+      "subject": "Gestion de projet",
+      "teacher_id": "T074",
+      "group_ids": [
+        "M1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-GPROJ-TD-G4",
+      "subject": "Gestion de projet",
+      "teacher_id": "T074",
+      "group_ids": [
+        "M1-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-GPROJ-TD-G5",
+      "subject": "Gestion de projet",
+      "teacher_id": "T074",
+      "group_ids": [
+        "M1-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-GPROJ-TD-G6",
+      "subject": "Gestion de projet",
+      "teacher_id": "T075",
+      "group_ids": [
+        "M1-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ML-CM",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T076",
+      "group_ids": [
+        "M1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ML-TD-G1",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T076",
+      "group_ids": [
+        "M1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ML-TD-G2",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T076",
+      "group_ids": [
+        "M1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ML-TD-G3",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T076",
+      "group_ids": [
+        "M1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ML-TD-G4",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T076",
+      "group_ids": [
+        "M1-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ML-TD-G5",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T076",
+      "group_ids": [
+        "M1-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ML-TD-G6",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T077",
+      "group_ids": [
+        "M1-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M1-ML-TP-G1a",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T077",
+      "group_ids": [
+        "M1-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-ML-TP-G1b",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T077",
+      "group_ids": [
+        "M1-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-ML-TP-G2a",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T077",
+      "group_ids": [
+        "M1-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-ML-TP-G2b",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T077",
+      "group_ids": [
+        "M1-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-ML-TP-G3a",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T078",
+      "group_ids": [
+        "M1-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-ML-TP-G3b",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T078",
+      "group_ids": [
+        "M1-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-ML-TP-G4a",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T078",
+      "group_ids": [
+        "M1-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-ML-TP-G4b",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T078",
+      "group_ids": [
+        "M1-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-ML-TP-G5a",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T079",
+      "group_ids": [
+        "M1-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-ML-TP-G5b",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T079",
+      "group_ids": [
+        "M1-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-ML-TP-G6a",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T079",
+      "group_ids": [
+        "M1-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M1-ML-TP-G6b",
+      "subject": "Apprentissage automatique",
+      "teacher_id": "T079",
+      "group_ids": [
+        "M1-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-BIG-CM",
+      "subject": "Big data",
+      "teacher_id": "T080",
+      "group_ids": [
+        "M2"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-BIG-TD-G1",
+      "subject": "Big data",
+      "teacher_id": "T080",
+      "group_ids": [
+        "M2-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-BIG-TD-G2",
+      "subject": "Big data",
+      "teacher_id": "T080",
+      "group_ids": [
+        "M2-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-BIG-TD-G3",
+      "subject": "Big data",
+      "teacher_id": "T080",
+      "group_ids": [
+        "M2-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-BIG-TD-G4",
+      "subject": "Big data",
+      "teacher_id": "T080",
+      "group_ids": [
+        "M2-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-BIG-TD-G5",
+      "subject": "Big data",
+      "teacher_id": "T080",
+      "group_ids": [
+        "M2-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-BIG-TD-G6",
+      "subject": "Big data",
+      "teacher_id": "T080",
+      "group_ids": [
+        "M2-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-BIG-TP-G1a",
+      "subject": "Big data",
+      "teacher_id": "T080",
+      "group_ids": [
+        "M2-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-BIG-TP-G1b",
+      "subject": "Big data",
+      "teacher_id": "T081",
+      "group_ids": [
+        "M2-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-BIG-TP-G2a",
+      "subject": "Big data",
+      "teacher_id": "T081",
+      "group_ids": [
+        "M2-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-BIG-TP-G2b",
+      "subject": "Big data",
+      "teacher_id": "T081",
+      "group_ids": [
+        "M2-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-BIG-TP-G3a",
+      "subject": "Big data",
+      "teacher_id": "T082",
+      "group_ids": [
+        "M2-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-BIG-TP-G3b",
+      "subject": "Big data",
+      "teacher_id": "T082",
+      "group_ids": [
+        "M2-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-BIG-TP-G4a",
+      "subject": "Big data",
+      "teacher_id": "T083",
+      "group_ids": [
+        "M2-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-BIG-TP-G4b",
+      "subject": "Big data",
+      "teacher_id": "T083",
+      "group_ids": [
+        "M2-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-BIG-TP-G5a",
+      "subject": "Big data",
+      "teacher_id": "T083",
+      "group_ids": [
+        "M2-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-BIG-TP-G5b",
+      "subject": "Big data",
+      "teacher_id": "T084",
+      "group_ids": [
+        "M2-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-BIG-TP-G6a",
+      "subject": "Big data",
+      "teacher_id": "T084",
+      "group_ids": [
+        "M2-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-BIG-TP-G6b",
+      "subject": "Big data",
+      "teacher_id": "T084",
+      "group_ids": [
+        "M2-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-CYBER-CM",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T085",
+      "group_ids": [
+        "M2"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-CYBER-TD-G1",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T085",
+      "group_ids": [
+        "M2-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-CYBER-TD-G2",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T085",
+      "group_ids": [
+        "M2-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-CYBER-TD-G3",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T085",
+      "group_ids": [
+        "M2-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-CYBER-TD-G4",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T085",
+      "group_ids": [
+        "M2-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-CYBER-TD-G5",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T085",
+      "group_ids": [
+        "M2-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-CYBER-TD-G6",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T086",
+      "group_ids": [
+        "M2-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-CYBER-TP-G1a",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T086",
+      "group_ids": [
+        "M2-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-CYBER-TP-G1b",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T086",
+      "group_ids": [
+        "M2-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-CYBER-TP-G2a",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T087",
+      "group_ids": [
+        "M2-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-CYBER-TP-G2b",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T087",
+      "group_ids": [
+        "M2-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-CYBER-TP-G3a",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T087",
+      "group_ids": [
+        "M2-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-CYBER-TP-G3b",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T087",
+      "group_ids": [
+        "M2-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-CYBER-TP-G4a",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T088",
+      "group_ids": [
+        "M2-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-CYBER-TP-G4b",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T088",
+      "group_ids": [
+        "M2-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-CYBER-TP-G5a",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T088",
+      "group_ids": [
+        "M2-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-CYBER-TP-G5b",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T088",
+      "group_ids": [
+        "M2-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-CYBER-TP-G6a",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T088",
+      "group_ids": [
+        "M2-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-CYBER-TP-G6b",
+      "subject": "Cybersécurité avancée",
+      "teacher_id": "T089",
+      "group_ids": [
+        "M2-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DEVOPS-CM",
+      "subject": "DevOps",
+      "teacher_id": "T090",
+      "group_ids": [
+        "M2"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-DEVOPS-TD-G1",
+      "subject": "DevOps",
+      "teacher_id": "T090",
+      "group_ids": [
+        "M2-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-DEVOPS-TD-G2",
+      "subject": "DevOps",
+      "teacher_id": "T090",
+      "group_ids": [
+        "M2-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-DEVOPS-TD-G3",
+      "subject": "DevOps",
+      "teacher_id": "T090",
+      "group_ids": [
+        "M2-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-DEVOPS-TD-G4",
+      "subject": "DevOps",
+      "teacher_id": "T090",
+      "group_ids": [
+        "M2-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-DEVOPS-TD-G5",
+      "subject": "DevOps",
+      "teacher_id": "T091",
+      "group_ids": [
+        "M2-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-DEVOPS-TD-G6",
+      "subject": "DevOps",
+      "teacher_id": "T091",
+      "group_ids": [
+        "M2-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-DEVOPS-TP-G1a",
+      "subject": "DevOps",
+      "teacher_id": "T091",
+      "group_ids": [
+        "M2-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DEVOPS-TP-G1b",
+      "subject": "DevOps",
+      "teacher_id": "T091",
+      "group_ids": [
+        "M2-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DEVOPS-TP-G2a",
+      "subject": "DevOps",
+      "teacher_id": "T091",
+      "group_ids": [
+        "M2-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DEVOPS-TP-G2b",
+      "subject": "DevOps",
+      "teacher_id": "T092",
+      "group_ids": [
+        "M2-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DEVOPS-TP-G3a",
+      "subject": "DevOps",
+      "teacher_id": "T092",
+      "group_ids": [
+        "M2-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DEVOPS-TP-G3b",
+      "subject": "DevOps",
+      "teacher_id": "T092",
+      "group_ids": [
+        "M2-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DEVOPS-TP-G4a",
+      "subject": "DevOps",
+      "teacher_id": "T092",
+      "group_ids": [
+        "M2-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DEVOPS-TP-G4b",
+      "subject": "DevOps",
+      "teacher_id": "T092",
+      "group_ids": [
+        "M2-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DEVOPS-TP-G5a",
+      "subject": "DevOps",
+      "teacher_id": "T093",
+      "group_ids": [
+        "M2-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DEVOPS-TP-G5b",
+      "subject": "DevOps",
+      "teacher_id": "T093",
+      "group_ids": [
+        "M2-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DEVOPS-TP-G6a",
+      "subject": "DevOps",
+      "teacher_id": "T093",
+      "group_ids": [
+        "M2-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DEVOPS-TP-G6b",
+      "subject": "DevOps",
+      "teacher_id": "T094",
+      "group_ids": [
+        "M2-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DL-CM",
+      "subject": "Deep learning",
+      "teacher_id": "T095",
+      "group_ids": [
+        "M2"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-DL-TD-G1",
+      "subject": "Deep learning",
+      "teacher_id": "T095",
+      "group_ids": [
+        "M2-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-DL-TD-G2",
+      "subject": "Deep learning",
+      "teacher_id": "T095",
+      "group_ids": [
+        "M2-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-DL-TD-G3",
+      "subject": "Deep learning",
+      "teacher_id": "T095",
+      "group_ids": [
+        "M2-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-DL-TD-G4",
+      "subject": "Deep learning",
+      "teacher_id": "T095",
+      "group_ids": [
+        "M2-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-DL-TD-G5",
+      "subject": "Deep learning",
+      "teacher_id": "T095",
+      "group_ids": [
+        "M2-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-DL-TD-G6",
+      "subject": "Deep learning",
+      "teacher_id": "T095",
+      "group_ids": [
+        "M2-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-DL-TP-G1a",
+      "subject": "Deep learning",
+      "teacher_id": "T096",
+      "group_ids": [
+        "M2-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DL-TP-G1b",
+      "subject": "Deep learning",
+      "teacher_id": "T096",
+      "group_ids": [
+        "M2-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DL-TP-G2a",
+      "subject": "Deep learning",
+      "teacher_id": "T096",
+      "group_ids": [
+        "M2-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DL-TP-G2b",
+      "subject": "Deep learning",
+      "teacher_id": "T096",
+      "group_ids": [
+        "M2-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DL-TP-G3a",
+      "subject": "Deep learning",
+      "teacher_id": "T097",
+      "group_ids": [
+        "M2-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DL-TP-G3b",
+      "subject": "Deep learning",
+      "teacher_id": "T097",
+      "group_ids": [
+        "M2-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DL-TP-G4a",
+      "subject": "Deep learning",
+      "teacher_id": "T097",
+      "group_ids": [
+        "M2-G4a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DL-TP-G4b",
+      "subject": "Deep learning",
+      "teacher_id": "T098",
+      "group_ids": [
+        "M2-G4b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DL-TP-G5a",
+      "subject": "Deep learning",
+      "teacher_id": "T098",
+      "group_ids": [
+        "M2-G5a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DL-TP-G5b",
+      "subject": "Deep learning",
+      "teacher_id": "T098",
+      "group_ids": [
+        "M2-G5b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DL-TP-G6a",
+      "subject": "Deep learning",
+      "teacher_id": "T099",
+      "group_ids": [
+        "M2-G6a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-DL-TP-G6b",
+      "subject": "Deep learning",
+      "teacher_id": "T099",
+      "group_ids": [
+        "M2-G6b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "M2-RECH-CM",
+      "subject": "Méthodologie de recherche",
+      "teacher_id": "T100",
+      "group_ids": [
+        "M2"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-RECH-TD-G1",
+      "subject": "Méthodologie de recherche",
+      "teacher_id": "T100",
+      "group_ids": [
+        "M2-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-RECH-TD-G2",
+      "subject": "Méthodologie de recherche",
+      "teacher_id": "T100",
+      "group_ids": [
+        "M2-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-RECH-TD-G3",
+      "subject": "Méthodologie de recherche",
+      "teacher_id": "T100",
+      "group_ids": [
+        "M2-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-RECH-TD-G4",
+      "subject": "Méthodologie de recherche",
+      "teacher_id": "T100",
+      "group_ids": [
+        "M2-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-RECH-TD-G5",
+      "subject": "Méthodologie de recherche",
+      "teacher_id": "T100",
+      "group_ids": [
+        "M2-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-RECH-TD-G6",
+      "subject": "Méthodologie de recherche",
+      "teacher_id": "T101",
+      "group_ids": [
+        "M2-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-VEILLE-CM",
+      "subject": "Veille technologique",
+      "teacher_id": "T102",
+      "group_ids": [
+        "M2"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-VEILLE-TD-G1",
+      "subject": "Veille technologique",
+      "teacher_id": "T102",
+      "group_ids": [
+        "M2-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-VEILLE-TD-G2",
+      "subject": "Veille technologique",
+      "teacher_id": "T102",
+      "group_ids": [
+        "M2-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-VEILLE-TD-G3",
+      "subject": "Veille technologique",
+      "teacher_id": "T102",
+      "group_ids": [
+        "M2-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-VEILLE-TD-G4",
+      "subject": "Veille technologique",
+      "teacher_id": "T102",
+      "group_ids": [
+        "M2-G4"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-VEILLE-TD-G5",
+      "subject": "Veille technologique",
+      "teacher_id": "T102",
+      "group_ids": [
+        "M2-G5"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "M2-VEILLE-TD-G6",
+      "subject": "Veille technologique",
+      "teacher_id": "T102",
+      "group_ids": [
+        "M2-G6"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    }
+  ]
+}

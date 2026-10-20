@@ -1,0 +1,826 @@
+{
+  "name": "small-s42",
+  "grid": {
+    "days": [
+      {
+        "name": "Lundi",
+        "slots": [
+          {
+            "start": "08:30",
+            "end": "10:00",
+            "late": false
+          },
+          {
+            "start": "10:10",
+            "end": "11:40",
+            "late": false
+          },
+          {
+            "start": "11:50",
+            "end": "13:20",
+            "late": false
+          },
+          {
+            "start": "14:00",
+            "end": "15:30",
+            "late": false
+          },
+          {
+            "start": "15:40",
+            "end": "17:10",
+            "late": true
+          }
+        ]
+      },
+      {
+        "name": "Mardi",
+        "slots": [
+          {
+            "start": "08:30",
+            "end": "10:00",
+            "late": false
+          },
+          {
+            "start": "10:10",
+            "end": "11:40",
+            "late": false
+          },
+          {
+            "start": "11:50",
+            "end": "13:20",
+            "late": false
+          },
+          {
+            "start": "14:00",
+            "end": "15:30",
+            "late": false
+          },
+          {
+            "start": "15:40",
+            "end": "17:10",
+            "late": true
+          }
+        ]
+      },
+      {
+        "name": "Mercredi",
+        "slots": [
+          {
+            "start": "08:30",
+            "end": "10:00",
+            "late": false
+          },
+          {
+            "start": "10:10",
+            "end": "11:40",
+            "late": false
+          },
+          {
+            "start": "11:50",
+            "end": "13:20",
+            "late": false
+          },
+          {
+            "start": "14:00",
+            "end": "15:30",
+            "late": false
+          },
+          {
+            "start": "15:40",
+            "end": "17:10",
+            "late": true
+          }
+        ]
+      },
+      {
+        "name": "Jeudi",
+        "slots": [
+          {
+            "start": "08:30",
+            "end": "10:00",
+            "late": false
+          },
+          {
+            "start": "10:10",
+            "end": "11:40",
+            "late": false
+          },
+          {
+            "start": "11:50",
+            "end": "13:20",
+            "late": false
+          },
+          {
+            "start": "14:00",
+            "end": "15:30",
+            "late": false
+          },
+          {
+            "start": "15:40",
+            "end": "17:10",
+            "late": true
+          }
+        ]
+      },
+      {
+        "name": "Vendredi",
+        "slots": [
+          {
+            "start": "08:30",
+            "end": "10:00",
+            "late": false
+          },
+          {
+            "start": "10:10",
+            "end": "11:40",
+            "late": false
+          },
+          {
+            "start": "11:50",
+            "end": "13:20",
+            "late": false
+          },
+          {
+            "start": "14:00",
+            "end": "15:30",
+            "late": false
+          },
+          {
+            "start": "15:40",
+            "end": "17:10",
+            "late": true
+          }
+        ]
+      },
+      {
+        "name": "Samedi",
+        "slots": [
+          {
+            "start": "08:30",
+            "end": "10:00",
+            "late": false
+          },
+          {
+            "start": "10:10",
+            "end": "11:40",
+            "late": false
+          },
+          {
+            "start": "11:50",
+            "end": "13:20",
+            "late": false
+          }
+        ]
+      }
+    ]
+  },
+  "teachers": [
+    {
+      "id": "T001",
+      "name": "Salma Marchand",
+      "unavailable": []
+    },
+    {
+      "id": "T002",
+      "name": "Thomas Henry",
+      "unavailable": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "T003",
+      "name": "Julien Bonnet",
+      "unavailable": []
+    },
+    {
+      "id": "T004",
+      "name": "Sébastien Guerin",
+      "unavailable": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "id": "T005",
+      "name": "Sarah Lefebvre",
+      "unavailable": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "T006",
+      "name": "Leïla Gauthier",
+      "unavailable": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "T007",
+      "name": "Antoine Vincent",
+      "unavailable": []
+    },
+    {
+      "id": "T008",
+      "name": "Lucas Laurent",
+      "unavailable": []
+    },
+    {
+      "id": "T009",
+      "name": "Sébastien Henry",
+      "unavailable": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "T010",
+      "name": "Thomas Fournier",
+      "unavailable": []
+    },
+    {
+      "id": "T011",
+      "name": "Marion Clément",
+      "unavailable": []
+    },
+    {
+      "id": "T012",
+      "name": "Sébastien Mathieu",
+      "unavailable": [
+        13,
+        14
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "id": "AMPHI-1",
+      "name": "Amphi Turing",
+      "capacity": 100,
+      "type": "CM"
+    },
+    {
+      "id": "B101",
+      "name": "Salle B101",
+      "capacity": 40,
+      "type": "TD"
+    },
+    {
+      "id": "L201",
+      "name": "Labo info L201",
+      "capacity": 20,
+      "type": "TP"
+    },
+    {
+      "id": "L202",
+      "name": "Labo info L202",
+      "capacity": 20,
+      "type": "TP"
+    }
+  ],
+  "groups": [
+    {
+      "id": "L1",
+      "name": "Promo L1",
+      "size": 96,
+      "parent": null
+    },
+    {
+      "id": "L1-G1",
+      "name": "L1-G1",
+      "size": 30,
+      "parent": "L1"
+    },
+    {
+      "id": "L1-G1a",
+      "name": "L1-G1a",
+      "size": 15,
+      "parent": "L1-G1"
+    },
+    {
+      "id": "L1-G1b",
+      "name": "L1-G1b",
+      "size": 15,
+      "parent": "L1-G1"
+    },
+    {
+      "id": "L1-G2",
+      "name": "L1-G2",
+      "size": 35,
+      "parent": "L1"
+    },
+    {
+      "id": "L1-G2a",
+      "name": "L1-G2a",
+      "size": 17,
+      "parent": "L1-G2"
+    },
+    {
+      "id": "L1-G2b",
+      "name": "L1-G2b",
+      "size": 18,
+      "parent": "L1-G2"
+    },
+    {
+      "id": "L1-G3",
+      "name": "L1-G3",
+      "size": 31,
+      "parent": "L1"
+    },
+    {
+      "id": "L1-G3a",
+      "name": "L1-G3a",
+      "size": 15,
+      "parent": "L1-G3"
+    },
+    {
+      "id": "L1-G3b",
+      "name": "L1-G3b",
+      "size": 16,
+      "parent": "L1-G3"
+    }
+  ],
+  "courses": [
+    {
+      "id": "L1-ALG-CM",
+      "subject": "Algèbre linéaire",
+      "teacher_id": "T001",
+      "group_ids": [
+        "L1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ALG-TD-G1",
+      "subject": "Algèbre linéaire",
+      "teacher_id": "T001",
+      "group_ids": [
+        "L1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ALG-TD-G2",
+      "subject": "Algèbre linéaire",
+      "teacher_id": "T001",
+      "group_ids": [
+        "L1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ALG-TD-G3",
+      "subject": "Algèbre linéaire",
+      "teacher_id": "T001",
+      "group_ids": [
+        "L1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ALGO-CM",
+      "subject": "Algorithmique",
+      "teacher_id": "T002",
+      "group_ids": [
+        "L1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ALGO-TD-G1",
+      "subject": "Algorithmique",
+      "teacher_id": "T002",
+      "group_ids": [
+        "L1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ALGO-TD-G2",
+      "subject": "Algorithmique",
+      "teacher_id": "T002",
+      "group_ids": [
+        "L1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ALGO-TD-G3",
+      "subject": "Algorithmique",
+      "teacher_id": "T002",
+      "group_ids": [
+        "L1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ALGO-TP-G1a",
+      "subject": "Algorithmique",
+      "teacher_id": "T002",
+      "group_ids": [
+        "L1-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ALGO-TP-G1b",
+      "subject": "Algorithmique",
+      "teacher_id": "T003",
+      "group_ids": [
+        "L1-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ALGO-TP-G2a",
+      "subject": "Algorithmique",
+      "teacher_id": "T003",
+      "group_ids": [
+        "L1-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ALGO-TP-G2b",
+      "subject": "Algorithmique",
+      "teacher_id": "T003",
+      "group_ids": [
+        "L1-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ALGO-TP-G3a",
+      "subject": "Algorithmique",
+      "teacher_id": "T003",
+      "group_ids": [
+        "L1-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ALGO-TP-G3b",
+      "subject": "Algorithmique",
+      "teacher_id": "T003",
+      "group_ids": [
+        "L1-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ANG-CM",
+      "subject": "Anglais",
+      "teacher_id": "T004",
+      "group_ids": [
+        "L1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ANG-TD-G1",
+      "subject": "Anglais",
+      "teacher_id": "T004",
+      "group_ids": [
+        "L1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ANG-TD-G2",
+      "subject": "Anglais",
+      "teacher_id": "T004",
+      "group_ids": [
+        "L1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ANG-TD-G3",
+      "subject": "Anglais",
+      "teacher_id": "T004",
+      "group_ids": [
+        "L1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ARCHI-CM",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T005",
+      "group_ids": [
+        "L1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ARCHI-TD-G1",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T005",
+      "group_ids": [
+        "L1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ARCHI-TD-G2",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T005",
+      "group_ids": [
+        "L1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ARCHI-TD-G3",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T005",
+      "group_ids": [
+        "L1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-ARCHI-TP-G1a",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T006",
+      "group_ids": [
+        "L1-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ARCHI-TP-G1b",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T006",
+      "group_ids": [
+        "L1-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ARCHI-TP-G2a",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T007",
+      "group_ids": [
+        "L1-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ARCHI-TP-G2b",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T007",
+      "group_ids": [
+        "L1-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ARCHI-TP-G3a",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T007",
+      "group_ids": [
+        "L1-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-ARCHI-TP-G3b",
+      "subject": "Architecture des ordinateurs",
+      "teacher_id": "T008",
+      "group_ids": [
+        "L1-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-COM-CM",
+      "subject": "Communication",
+      "teacher_id": "T009",
+      "group_ids": [
+        "L1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-COM-TD-G1",
+      "subject": "Communication",
+      "teacher_id": "T009",
+      "group_ids": [
+        "L1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-COM-TD-G2",
+      "subject": "Communication",
+      "teacher_id": "T009",
+      "group_ids": [
+        "L1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-COM-TD-G3",
+      "subject": "Communication",
+      "teacher_id": "T009",
+      "group_ids": [
+        "L1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-WEB-CM",
+      "subject": "Introduction au Web",
+      "teacher_id": "T010",
+      "group_ids": [
+        "L1"
+      ],
+      "room_type": "CM",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-WEB-TD-G1",
+      "subject": "Introduction au Web",
+      "teacher_id": "T010",
+      "group_ids": [
+        "L1-G1"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-WEB-TD-G2",
+      "subject": "Introduction au Web",
+      "teacher_id": "T010",
+      "group_ids": [
+        "L1-G2"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-WEB-TD-G3",
+      "subject": "Introduction au Web",
+      "teacher_id": "T010",
+      "group_ids": [
+        "L1-G3"
+      ],
+      "room_type": "TD",
+      "sessions_per_week": 1,
+      "max_sessions_per_day": 1
+    },
+    {
+      "id": "L1-WEB-TP-G1a",
+      "subject": "Introduction au Web",
+      "teacher_id": "T010",
+      "group_ids": [
+        "L1-G1a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-TP-G1b",
+      "subject": "Introduction au Web",
+      "teacher_id": "T010",
+      "group_ids": [
+        "L1-G1b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-TP-G2a",
+      "subject": "Introduction au Web",
+      "teacher_id": "T011",
+      "group_ids": [
+        "L1-G2a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-TP-G2b",
+      "subject": "Introduction au Web",
+      "teacher_id": "T011",
+      "group_ids": [
+        "L1-G2b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-TP-G3a",
+      "subject": "Introduction au Web",
+      "teacher_id": "T011",
+      "group_ids": [
+        "L1-G3a"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    },
+    {
+      "id": "L1-WEB-TP-G3b",
+      "subject": "Introduction au Web",
+      "teacher_id": "T012",
+      "group_ids": [
+        "L1-G3b"
+      ],
+      "room_type": "TP",
+      "sessions_per_week": 2,
+      "max_sessions_per_day": 2
+    }
+  ]
+}
