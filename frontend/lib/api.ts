@@ -43,4 +43,10 @@ export const api = {
     request<ReplanResult>("/replan", body),
   benchmark: (instance: Instance, weights: Weights, time_limit: number) =>
     request<BenchmarkResult>("/benchmark", { instance, weights, time_limit }),
+  /** .ics file (RFC 5545, built by the backend) for the current filter; returns the file as a Blob. */
+  exportIcs: async (body: { instance: Instance; solution: Solution; group?: string; teacher?: string; room?: string; weeks?: number }) => {
+    const res = await fetch(`${API_URL}/export/ics`, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) });
+    if (!res.ok) throw new Error(`Erreur ${res.status} : ${await res.text()}`);
+    return res.blob();
+  },
 };

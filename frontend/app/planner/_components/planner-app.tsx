@@ -189,7 +189,7 @@ export function PlannerApp() {
           </p>
         )}
 
-        <div className="grid grid-cols-1 gap-5 lg:grid-cols-[20rem_minmax(0,1fr)]">
+        <div className="grid grid-cols-1 gap-5 lg:grid-cols-[20rem_minmax(0,1fr)] print:block">
           <aside className="no-print flex flex-col gap-4">
             <InstanceLoader busy={busy} onSample={loadSample} onGenerate={generate} />
             {instance && (
@@ -251,7 +251,13 @@ export function PlannerApp() {
               </Card>
             ) : (
               <>
-                <ViewToolbar instance={instance} mode={mode} entityId={entityId} onMode={setMode} onEntity={setEntityId} />
+                <div className="no-print flex flex-wrap items-center justify-between gap-2">
+                  <ViewToolbar instance={instance} mode={mode} entityId={entityId} onMode={setMode} onEntity={setEntityId} />
+                  <ExportButtons instance={instance} solution={solution} mode={mode} entityId={entityId} onError={setError} />
+                </div>
+                <h2 className="hidden font-heading text-2xl print:block">
+                  Emploi du temps · {entityLabel(instance, mode, entityId)} · {instance.name}
+                </h2>
                 {run && <RunBanner run={run} />}
                 {replan?.feasible && <ChangesList replan={replan} />}
                 {explanation && <ConflictsPanel explanation={explanation} instance={instance} onHover={setHover} hover={hover} />}
@@ -386,6 +392,48 @@ function ViewToolbar({ instance, mode, entityId, onMode, onEntity }: {
   );
 }
 
+function entityLabel(instance: Instance, mode: ViewMode, id: string): string {
+  if (mode === "group") return instance.groups.find((g) => g.id === id)?.name ?? id;
+  if (mode === "teacher") return instance.teachers.find((t) => t.id === id)?.name ?? id;
+  return instance.rooms.find((r) => r.id === id)?.name ?? id;
+}
+
+/** PDF: browser print (A4 landscape, grid only, see @media print in globals.css). .ics: built by the API. */
+function ExportButtons({ instance, solution, mode, entityId, onError }: {
+  instance: Instance; solution: Solution | null; mode: ViewMode; entityId: string; onError: (m: string) => void;
+}) {
+  const [weeks, setWeeks] = useState(1);
+  const downloadIcs = async () => {
+    if (!solution) return;
+    try {
+      const blob = await api.exportIcs({ instance, solution, [mode]: entityId, weeks });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `${entityLabel(instance, mode, entityId).replace(/[^\w.-]+/g, "_")}.ics`;
+      link.click();
+      URL.revokeObjectURL(url);
+    } catch (e) {
+      onError(e instanceof Error ? e.message : String(e));
+    }
+  };
+  return (
+    <div className="flex flex-wrap items-center gap-2 text-sm">
+      <Button variant="outline" size="sm" disabled={!solution} onClick={() => window.print()}>
+        PDF (imprimer)
+      </Button>
+      <select aria-label="Semaines" className="rounded-md border bg-background px-2 py-1" value={weeks} onChange={(e) => setWeeks(Number(e.target.value))}>
+        {[1, 4, 12, 15].map((w) => (
+          <option key={w} value={w}>{w} semaine{w > 1 ? "s" : ""}</option>
+        ))}
+      </select>
+      <Button variant="outline" size="sm" disabled={!solution} onClick={downloadIcs}>
+        Exporter .ics
+      </Button>
+    </div>
+  );
+}
+
 function RunBanner({ run }: { run: RunInfo }) {
   return (
     <div className="no-print flex flex-wrap items-center gap-2 text-sm">
@@ -412,7 +460,7 @@ function ConflictsPanel({ explanation, instance, onHover, hover }: {
   const highlight = hover ? conflictHighlight(instance, hover) : null;
   const concerned = highlight ? instance.courses.filter((c) => highlight.courses.has(c.id)).slice(0, 24) : [];
   return (
-    <Card size="sm" className={explanation.feasible ? "" : "ring-destructive/40"}>
+    <Card size="sm" className={`no-print ${explanation.feasible ? "" : "ring-destructive/40"}`}>
       <CardHeader>
         <CardTitle>{explanation.feasible ? "Aucun conflit" : "Pourquoi il n'y a pas de solution"}</CardTitle>
         <CardDescription>
@@ -501,7 +549,7 @@ function ReplanForm({ instance, busy, onReplan }: {
 
 function ChangesList({ replan }: { replan: ReplanResult }) {
   return (
-    <Card size="sm">
+    <Card size="sm" className="no-print">
       <CardHeader>
         <CardTitle>
           {replan.sessions_moved} séance(s) déplacée(s) · minimum possible {replan.min_moves}
