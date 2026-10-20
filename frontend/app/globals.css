@@ -1,0 +1,298 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+/* Copié de LMAgent (C:\Users\SBS\lmagent\app\globals.css) : thème « Encre & papier », polices, mode sombre, motion.
+   Retiré : imports shadcn / tw-animate-css et règles propres aux lettres. Ajouté en fin de fichier : grille du planificateur. */
+
+/* Thème : classe .dark posée sur <html> par le script de components/theme (système par défaut, sans flash). */
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-public-sans), "Segoe UI", system-ui, sans-serif;
+  --font-heading: var(--font-instrument-serif), "Times New Roman", serif;
+  --font-letter: var(--font-newsreader), Georgia, serif;
+  --font-mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-warning: var(--warning);
+  --color-sheet: var(--sheet);
+  --color-sheet-foreground: var(--sheet-foreground);
+  --color-mark: var(--mark);
+  --color-seal: var(--seal);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+/*
+ * Direction « Encre & papier » (référence dans CLAUDE.md). La feuille de la lettre reste claire dans les deux thèmes :
+ * c'est ce que le recruteur reçoit en PDF.
+ */
+:root {
+  --background: #f5f6f9; /* fond */
+  --foreground: #1c2a4a; /* encre */
+  --card: #ffffff; /* surface */
+  --card-foreground: #1c2a4a;
+  --popover: #ffffff;
+  --popover-foreground: #1c2a4a;
+  --primary: #1c2a4a; /* accent : bouton principal */
+  --primary-foreground: #ffffff;
+  --secondary: #eef1f7;
+  --secondary-foreground: #1c2a4a;
+  --muted: #eef1f7;
+  --muted-foreground: #5f6880; /* mine */
+  --accent: #eef1f7;
+  --accent-foreground: #1c2a4a;
+  --destructive: #b3261e; /* cachet */
+  --warning: #b3261e;
+  --border: #d9dde6; /* filet */
+  --input: #d9dde6;
+  --ring: #2a5bd7;
+  --sheet: #ffffff;
+  --sheet-foreground: #1c2a4a;
+  --mark: #ffd9b5; /* surligneur */
+  --seal: #b3261e; /* sceau du logo */
+  --radius: 0.375rem;
+}
+
+.dark {
+  --background: #10162a;
+  --foreground: #e7eaf3;
+  --card: #172036;
+  --card-foreground: #e7eaf3;
+  --popover: #172036;
+  --popover-foreground: #e7eaf3;
+  --primary: #c8d3f5;
+  --primary-foreground: #10162a;
+  --secondary: #1f2942;
+  --secondary-foreground: #e7eaf3;
+  --muted: #1f2942;
+  --muted-foreground: #9ba4bd;
+  --accent: #1f2942;
+  --accent-foreground: #e7eaf3;
+  --destructive: #ef6b62;
+  --warning: #ef6b62;
+  --border: #2a3452;
+  --input: #2a3452;
+  --ring: #9db6ff;
+  --sheet: #eceef3;
+  --sheet-foreground: #1c2a4a;
+  --mark: #f3c99f;
+  --seal: #ef6b62;
+  color-scheme: dark;
+}
+
+/* Export PDF par l'impression du navigateur : A4 paysage, seule la grille est imprimée, toujours en clair. */
+@page {
+  size: A4 landscape;
+  margin: 10mm;
+}
+@media print {
+  html,
+  body {
+    background: #ffffff !important;
+    color: #1c2a4a !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-area {
+    break-inside: avoid;
+  }
+  .session {
+    box-shadow: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* Apparition discrète des pages de travail (components/motion/reveal.tsx). */
+@keyframes lm-reveal {
+  from {
+    opacity: 0;
+    translate: 0 6px;
+  }
+}
+.reveal > * {
+  animation: lm-reveal 0.35s ease-out both;
+}
+.reveal > :nth-child(2) { animation-delay: 60ms; }
+.reveal > :nth-child(3) { animation-delay: 120ms; }
+.reveal > :nth-child(4) { animation-delay: 180ms; }
+.reveal > :nth-child(5) { animation-delay: 240ms; }
+.reveal > :nth-child(n + 6) { animation-delay: 300ms; }
+/* Bouton à reflet (type « shimmer button » de 21st.dev, en CSS) : réservé aux actions principales. */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 30%, rgb(255 255 255 / 0.28) 50%, transparent 70%);
+  transform: translateX(-120%);
+  animation: lm-shine 3.2s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes lm-shine {
+  55%,
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+/* Carte à halo qui suit le curseur (type « spotlight card », CSS + variables posées par SpotlightCard). */
+.spotlight {
+  background:
+    radial-gradient(260px circle at var(--spot-x, 70%) var(--spot-y, 20%), color-mix(in oklab, var(--ring) 12%, transparent), transparent 70%),
+    var(--card);
+}
+
+/* Balayage de l'aperçu pendant l'analyse du CV. */
+@keyframes lm-scan {
+  from {
+    transform: translateY(-60%);
+  }
+  to {
+    transform: translateY(60%);
+  }
+}
+.scan-line {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 0 46%, color-mix(in oklab, var(--ring) 22%, transparent) 50%, transparent 54%);
+  animation: lm-scan 2.4s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+/* Coche qui se trace (confirmation d'enregistrement). */
+@keyframes lm-draw {
+  from {
+    stroke-dashoffset: 24;
+  }
+}
+.draw-tick path {
+  animation: lm-draw 0.45s ease-out 0.1s both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal > *,
+  .draw-tick path,
+  .btn-shine::after,
+  .scan-line {
+    animation: none;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+}
+
+/* ------------------------------------------------------------------ Fedi's Planner : grille hebdomadaire */
+
+/* Séance : teinte par matière (--hue posée en ligne), lisible en clair comme en sombre. */
+.session {
+  --session-bg: oklch(0.95 0.045 var(--hue));
+  --session-edge: oklch(0.55 0.13 var(--hue));
+  background: var(--session-bg);
+  border-left: 3px solid var(--session-edge);
+  color: #1c2a4a;
+}
+.dark .session {
+  --session-bg: oklch(0.32 0.06 var(--hue));
+  --session-edge: oklch(0.72 0.13 var(--hue));
+  color: #e7eaf3;
+}
+
+/* Séance déplacée par la replanification : surligneur (couleur --mark de LMAgent). */
+.session[data-moved="true"] {
+  outline: 2px solid var(--mark);
+  outline-offset: 1px;
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--mark) 45%, transparent);
+}
+.session[data-room-changed="true"] {
+  outline: 2px dashed var(--mark);
+}
+
+/* Survol d'une contrainte du panneau de conflits : cours et créneaux concernés. */
+.grid-cell[data-hot="true"] {
+  background: color-mix(in oklab, var(--seal) 12%, transparent);
+  box-shadow: inset 0 0 0 1.5px color-mix(in oklab, var(--seal) 60%, transparent);
+}
+.grid-cell[data-forbidden="true"] {
+  background: repeating-linear-gradient(135deg, transparent 0 6px, color-mix(in oklab, var(--muted-foreground) 14%, transparent) 6px 8px);
+}
+.session[data-hot="true"],
+.chip[data-hot="true"] {
+  outline: 2px solid var(--seal);
+  outline-offset: 1px;
+}
+.session[data-dim="true"] {
+  opacity: 0.35;
+}
+.session:not(.hero-session),
+.grid-cell,
+.chip {
+  /* not on the home illustration: GSAP animates its opacity */
+  transition: opacity 0.2s ease, outline-color 0.2s ease, background-color 0.2s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .session,
+  .grid-cell,
+  .chip {
+    transition: none;
+  }
+}
+
+/* Curseurs des poids. */
+input[type="range"] {
+  accent-color: var(--ring);
+}
+/* Cascade d'apparition après une résolution (CSS : le contenu reste visible si l'animation ne tourne pas).
+   --i = index du créneau, la semaine se remplit dans l'ordre. */
+@keyframes fp-cascade {
+  from {
+    opacity: 0;
+    translate: 0 8px;
+  }
+}
+.cascade .session {
+  animation: fp-cascade 0.35s ease-out both;
+  animation-delay: min(calc(var(--i, 0) * 30ms), 900ms);
+}
+@media (prefers-reduced-motion: reduce) {
+  .cascade .session {
+    animation: none;
+  }
+}

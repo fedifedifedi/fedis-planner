@@ -22,7 +22,9 @@ Projet à livrer en 1–2 jours, 100 % gratuit.
 3. **Paquets publiés depuis au moins 14 jours** (direct *et* transitif) :
    - pip : toujours `--uploaded-prior-to <aujourd'hui - 14 j, ISO 8601 UTC>` ;
    - après chaque installation : `backend\.venv\Scripts\python.exe scripts\check_package_age.py` doit sortir en code 0 ;
-   - npm : vérifier la date (`npm view <pkg> time --json`) et figer la version exacte.
+   - npm : `npm install --before=<ISO>` (résolution datée) + versions exactes (`.npmrc` : save-exact) ;
+     **`npm view <pkg> version --before` ignore la date** : choisir les versions avec `node scripts/npm_versions_before.mjs <pkgs>`
+     et auditer avec `node scripts/check_npm_age.mjs` (lit `frontend/package-lock.json`, code 1 si violation).
    - Puis régénérer le lock : `backend\.venv\Scripts\python.exe -m pip freeze > backend\requirements.lock` (encodage ASCII/UTF-8 sans BOM).
 4. **Éviter les gros paquets** : pas de librairie si quelques dizaines de lignes suffisent.
 5. **Installations réseau** : `pip install --retries 10 --timeout 60 --only-binary=:all: ...` ; en cas d'erreur SSL en cours de téléchargement, relancer (le cache pip conserve l'acquis).

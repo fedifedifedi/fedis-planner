@@ -19,3 +19,8 @@ bench/results/
 .idea/
 Thumbs.db
 .DS_Store
+
+# Next.js generated
+*.tsbuildinfo
+next-env.d.ts
+.env.local
