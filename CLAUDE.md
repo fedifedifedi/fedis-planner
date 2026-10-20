@@ -9,6 +9,12 @@ Projet à livrer en 1–2 jours, 100 % gratuit.
 - **Frontend** : Next.js + TypeScript (Node 24) — grille hebdo filtrable groupe / prof / salle, export PDF (impression navigateur, `window.print()` + CSS print, **aucune dépendance**) et `.ics` (généré côté API, écrit à la main, sans librairie).
 - **OS** : Windows 11 + PowerShell. Connexion internet **instable**.
 
+## Périmètre
+
+- **Exécution locale uniquement** : pas de déploiement, ni Docker, ni configuration d'hébergement, ni limite de requêtes.
+- **Pas de base de données** : instances et solutions en fichiers JSON.
+- Seule limite à garder : le **temps de résolution** du solveur, configurable.
+
 ## Règles de travail (obligatoires)
 
 1. **Plan avant chaque étape** : présenter le plan détaillé de l'étape et attendre la validation avant de coder.
