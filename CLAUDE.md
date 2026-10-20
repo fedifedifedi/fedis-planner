@@ -120,6 +120,12 @@ cd backend; .venv\Scripts\python.exe -m pytest
 # Audit des dates de paquets
 backend\.venv\Scripts\python.exe scripts\check_package_age.py
 
+# Interface
+cd frontend; npm run dev          # http://localhost:3000 (API attendue sur http://127.0.0.1:8000)
+cd frontend; npx tsc --noEmit; npm run build
+node scripts\check_npm_age.mjs     # règle des 14 jours côté npm
+.\dev.ps1                          # API + interface dans deux fenêtres
+
 # Installation reproductible
 backend\.venv\Scripts\python.exe -m pip install --retries 10 --timeout 60 --only-binary=:all: -r backend\requirements.lock
 ```
