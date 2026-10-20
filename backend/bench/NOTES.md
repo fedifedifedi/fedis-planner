@@ -25,3 +25,33 @@ ne borne rien. Le compromis tardif / déséquilibre / samedi reste donc non born
 **Lecture de l'écart.** Un écart de 40 à 100 % mesure surtout la faiblesse de la borne, pas la
 qualité des solutions : celles-ci n'ont aucune violation, presque aucun trou, et 100 % des blocs
 de TP gardent leur salle.
+
+## Glouton vs CP-SAT (benchmark unique de l'étape 7)
+
+Commande : `python -m bench.compare` — 8 threads, `random_seed=0`, 60 s par résolution, poids par défaut.
+Tableau complet : [results_compare.md](results_compare.md).
+
+| Taille (3 graines, occupation 75 %) | Glouton : score / temps | CP-SAT : score | CP-SAT bat le glouton après | CP-SAT + départ glouton : score |
+|---|---|---|---|---|
+| petite | 75 – 99 / ≤ 0,02 s | **12 – 25** | 0,6 – 1,9 s | 15 – 24 |
+| moyenne | 284 – 356 / ≤ 0,07 s | 92 – 128 | 8 – 11 s | **85 – 116** |
+| grande | 753 – 858 / ≤ 0,17 s | 439 – 577 | 28 – 41 s | **439 – 482** |
+
+Instances serrées (occupation des salles 100 %, graine 1) :
+
+| Instance | Glouton | CP-SAT |
+|---|---|---|
+| petite | 2 séances non placées | **INFEASIBLE prouvé** : aucun emploi du temps n'existe (le glouton ne peut pas le savoir) |
+| moyenne | 2 séances non placées | emploi du temps complet (score 191) |
+| grande | 9 séances non placées | emploi du temps complet (score 784) |
+
+Lecture :
+- Le glouton est 100 à 1000 fois plus rapide mais 3 à 6 fois moins bon, et il échoue (séances non placées)
+  dès que les salles sont pleines, même quand une solution existe.
+- **Départ glouton** : première solution plus tôt partout (moyenne 2–4 s au lieu de 4,5–5 s ; grande 5–15 s
+  au lieu de 12–16 s). Score final sur les 8 instances moyennes/grandes : meilleur sur 5, égal sur 1, un peu
+  moins bon sur les 2 serrées (200 vs 191, 792 vs 784) ; sur la petite école, mitigé (15–24 vs 12–25).
+  Écarts de quelques % du même ordre que le bruit d'une exécution multi-thread. L'intérêt principal : CP-SAT
+  part d'une solution complète, donc en pratique jamais pire que le glouton même avec une limite de temps
+  courte (à froid, la grande école ne bat le glouton qu'après 28–41 s).
+- Décision : départ glouton activé par défaut dans l'API (`warm_start=true`, coût < 0,2 s).

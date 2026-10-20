@@ -317,13 +317,14 @@ class SolveResult:
 def run_solver(tm: TimetableModel, time_limit: float = DEFAULT_TIME_LIMIT,
                workers: int = DEFAULT_WORKERS, random_seed: int = 0,
                previous_rooms: dict[tuple[str, int], str] | None = None,
-               frozen_rooms: set[tuple[str, int]] | None = None) -> SolveResult:
+               frozen_rooms: set[tuple[str, int]] | None = None,
+               callback: cp_model.CpSolverSolutionCallback | None = None) -> SolveResult:
     solver = cp_model.CpSolver()
     solver.parameters.max_time_in_seconds = time_limit
     solver.parameters.num_workers = workers
     solver.parameters.random_seed = random_seed
     start = time.perf_counter()
-    status = solver.solve(tm.model)
+    status = solver.solve(tm.model, callback)
     solve_time = time.perf_counter() - start
 
     name = solver.status_name(status)
@@ -365,9 +366,15 @@ def run_solver(tm: TimetableModel, time_limit: float = DEFAULT_TIME_LIMIT,
 
 def solve(instance: Instance, time_limit: float = DEFAULT_TIME_LIMIT, workers: int = DEFAULT_WORKERS,
           random_seed: int = 0, rooms: RoomsMode = "threshold", weights: Weights | None = None,
-          optimize: bool = True) -> SolveResult:
-    """Build and solve the timetable. optimize=False: hard constraints only (feasibility)."""
+          optimize: bool = True, hint: Solution | None = None,
+          callback: cp_model.CpSolverSolutionCallback | None = None) -> SolveResult:
+    """Build and solve the timetable. optimize=False: hard constraints only (feasibility).
+    hint: a (possibly partial) timetable used as starting point, e.g. the greedy solution."""
     tm = TimetableModel(instance, rooms=rooms)
     if optimize:
         tm.add_objective(weights or Weights())
-    return run_solver(tm, time_limit=time_limit, workers=workers, random_seed=random_seed)
+    if hint is not None:
+        placed = {(a.course_id, a.slot) for a in hint.assignments}
+        for key, x in tm.x.items():
+            tm.model.add_hint(x, int(key in placed))
+    return run_solver(tm, time_limit=time_limit, workers=workers, random_seed=random_seed, callback=callback)
